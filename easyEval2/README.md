@@ -37,6 +37,89 @@ easyEval2/
 └── README.md            # 项目说明
 ```
 
+## 🔄 系统时序图
+
+以下时序图展示了 easyEval2 语义相似度评估系统的完整工作流程：
+
+```mermaid
+sequenceDiagram
+    participant User as 用户
+    participant MainPy as main.py
+    participant Config as config.py
+    participant TestCases as test_cases.json
+    participant EasyChat as EasyChat API
+    participant SemanticEval as semantic_eval.py
+    participant AIClient as AI客户端
+    participant Results as results/
+    participant Logs as logs/
+
+    User->>MainPy: 启动评估 (python main.py --use-local-api)
+    MainPy->>Config: 加载配置和环境变量
+    Config-->>MainPy: 返回API配置信息
+    
+    MainPy->>TestCases: 读取测试用例
+    TestCases-->>MainPy: 返回50+个测试用例
+    
+    MainPy->>SemanticEval: 初始化评估引擎
+    SemanticEval->>AIClient: 初始化AI客户端 (本地/DeepSeek)
+    AIClient-->>SemanticEval: 客户端就绪
+    
+    MainPy->>MainPy: 显示进度条和时间估算
+    
+    loop 遍历每个测试用例
+        MainPy->>EasyChat: 发送测试问题
+        
+        alt EasyChat 正常响应
+            EasyChat-->>MainPy: 返回AI回答
+        else EasyChat 异常
+            MainPy->>MainPy: 使用模拟回答
+        end
+        
+        MainPy->>SemanticEval: 调用语义评估
+        SemanticEval->>SemanticEval: 根据场景选择提示词
+        SemanticEval->>AIClient: 发送评估请求
+        
+        alt 本地API模式
+            AIClient->>AIClient: 调用本地模型 (Ollama)
+            AIClient-->>SemanticEval: 返回评估结果
+        else DeepSeek API模式
+            AIClient->>AIClient: 调用DeepSeek API
+            AIClient-->>SemanticEval: 返回评估结果
+        end
+        
+        SemanticEval->>SemanticEval: 解析5维度评分
+        SemanticEval->>SemanticEval: 计算加权总分
+        SemanticEval-->>MainPy: 返回详细评估结果
+        
+        MainPy->>MainPy: 更新进度条和统计
+        MainPy->>Logs: 记录详细日志
+    end
+    
+    MainPy->>MainPy: 计算总体统计信息
+    MainPy->>Results: 生成JSON详细报告
+    MainPy->>Results: 生成Markdown摘要报告
+    MainPy->>User: 显示评估完成信息
+    
+    Note over SemanticEval,Results: 智能评估完成<br/>生成多维度分析报告
+```
+
+### 时序图说明
+
+1. **初始化阶段**: 加载配置、测试用例和AI客户端
+2. **智能评估阶段**: 使用AI模型进行语义相似度分析
+3. **多模式支持**: 支持本地API和云端API两种模式
+4. **多维度评分**: 从5个维度进行详细评估
+5. **智能报告**: 生成JSON和Markdown两种格式报告
+6. **进度跟踪**: 实时显示评估进度和时间估算
+
+### 核心特性
+
+- **AI驱动评估**: 使用先进的语言模型进行语义理解
+- **场景自适应**: 根据不同场景调整评估策略
+- **双模式运行**: 本地模式节省成本，云端模式提升精度
+- **可视化进度**: 实时进度条和时间估算
+- **详细分析**: 多维度评分和统计分析
+
 ## 🚀 快速开始
 
 ### 1. 环境准备

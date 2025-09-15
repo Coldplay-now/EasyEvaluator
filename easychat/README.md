@@ -13,6 +13,106 @@
 - 🚪 简单的退出命令（输入 `quit`）
 - 📊 **集成评估系统** - 配合 easyEval 和 easyEval2 进行质量评估
 
+## 系统时序图
+
+### 双模式运行架构
+
+```mermaid
+sequenceDiagram
+    participant User as 用户
+    participant CLI as 命令行界面
+    participant API as API服务
+    participant Core as 核心引擎
+    participant DeepSeek as DeepSeek API
+    participant Config as 配置管理
+    participant Eval as 评估系统
+
+    Note over User,Eval: EasyChat 双模式运行时序图
+    
+    %% 初始化阶段
+    rect rgb(240, 248, 255)
+        Note over User,Eval: 系统初始化
+        User->>Core: 启动程序
+        Core->>Config: 加载配置文件(.env)
+        Config-->>Core: 返回配置信息
+        Core->>Config: 读取系统提示词(systemprompt.md)
+        Config-->>Core: 返回提示词内容
+        
+        alt 命令行模式
+            Core->>CLI: 初始化命令行界面
+            CLI-->>User: 显示欢迎信息
+        else API服务模式
+            Core->>API: 启动FastAPI服务
+            API-->>User: 服务就绪(http://localhost:8000)
+        end
+    end
+    
+    %% 对话处理阶段
+    rect rgb(245, 255, 245)
+        Note over User,Eval: 智能对话处理
+        
+        alt 命令行模式对话
+            User->>CLI: 输入消息
+            CLI->>Core: 处理用户输入
+            Core->>DeepSeek: 发送API请求
+            DeepSeek-->>Core: 返回流式响应
+            Core->>CLI: 实时显示响应
+            CLI-->>User: 流式输出结果
+            
+            loop 连续对话
+                User->>CLI: 继续对话
+                CLI->>Core: 保持上下文
+                Core->>DeepSeek: 带历史的请求
+                DeepSeek-->>Core: 上下文相关响应
+                Core->>CLI: 显示响应
+                CLI-->>User: 输出结果
+            end
+            
+        else API服务模式对话
+            User->>API: POST /chat请求
+            API->>Core: 解析请求消息
+            Core->>DeepSeek: 发送API请求
+            DeepSeek-->>Core: 返回完整响应
+            Core->>API: 格式化响应
+            API-->>User: JSON格式回复
+        end
+    end
+    
+    %% 评估集成阶段
+    rect rgb(255, 245, 238)
+        Note over User,Eval: 质量评估集成
+        Core->>Eval: 触发评估流程
+        Eval->>Core: 获取对话数据
+        Core-->>Eval: 提供对话历史
+        Eval->>DeepSeek: 执行评估测试
+        DeepSeek-->>Eval: 返回评估结果
+        Eval-->>Core: 生成评估报告
+        Core-->>User: 输出评估结果
+    end
+    
+    %% 错误处理
+    rect rgb(255, 240, 240)
+        Note over User,Eval: 异常处理机制
+        alt API调用失败
+            DeepSeek-->>Core: 错误响应
+            Core->>Core: 错误处理逻辑
+            Core-->>User: 友好错误提示
+        else 配置错误
+            Config-->>Core: 配置异常
+            Core-->>User: 配置错误提示
+        end
+    end
+```
+
+### 核心特性说明
+
+- **双模式架构**: 支持命令行交互和HTTP API服务两种运行模式
+- **流式响应**: 命令行模式提供实时流式输出体验
+- **上下文保持**: 支持连续对话，维护对话历史
+- **配置灵活**: 通过.env文件和systemprompt.md实现灵活配置
+- **评估集成**: 与easyEval系列工具深度集成，支持质量评估
+- **错误处理**: 完善的异常处理机制，提供友好的错误提示
+
 ## 安装说明
 
 ### 1. 环境要求

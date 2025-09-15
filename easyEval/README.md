@@ -33,6 +33,67 @@ easyEval/
 └── evaltasklist.md        # 项目任务清单
 ```
 
+## 系统时序图
+
+以下时序图展示了 easyEval 评估系统的完整工作流程：
+
+```mermaid
+sequenceDiagram
+    participant User as 用户
+    participant EvalScript as eval.py
+    participant Config as config.py
+    participant TestCases as test_cases.json
+    participant EasyChat as EasyChat API
+    participant Results as results/
+    participant Logs as logs/
+
+    User->>EvalScript: 启动评估 (python src/eval.py)
+    EvalScript->>Config: 加载配置参数
+    Config-->>EvalScript: 返回配置信息
+    
+    EvalScript->>TestCases: 读取测试用例
+    TestCases-->>EvalScript: 返回50个测试用例
+    
+    EvalScript->>EvalScript: 初始化进度条和统计
+    
+    loop 遍历每个测试用例
+        EvalScript->>EasyChat: 发送测试问题
+        
+        alt EasyChat 正常响应
+            EasyChat-->>EvalScript: 返回AI回答
+            EvalScript->>EvalScript: 检查关键词匹配
+            EvalScript->>EvalScript: 记录成功/失败
+        else EasyChat 超时或错误
+            EasyChat-->>EvalScript: 超时/错误响应
+            EvalScript->>EvalScript: 执行重试逻辑
+            
+            alt 重试成功
+                EvalScript->>EvalScript: 记录成功
+            else 重试失败
+                EvalScript->>EvalScript: 记录失败原因
+            end
+        end
+        
+        EvalScript->>EvalScript: 更新进度条
+        EvalScript->>Logs: 写入详细日志
+    end
+    
+    EvalScript->>EvalScript: 计算完成率统计
+    EvalScript->>Results: 生成JSON报告
+    EvalScript->>Results: 生成文本摘要
+    EvalScript->>User: 显示评估结果
+    
+    Note over EvalScript,Results: 评估完成<br/>生成详细报告和摘要
+```
+
+### 时序图说明
+
+1. **初始化阶段**: 加载配置和测试用例
+2. **批量测试阶段**: 循环执行所有测试用例
+3. **错误处理**: 自动重试机制处理临时失败
+4. **结果生成**: 计算统计数据并生成报告
+5. **日志记录**: 全程记录详细执行日志
+
 ## 快速开始
 
 ### 环境要求
