@@ -2,7 +2,7 @@
 
 一个完整的AI对话系统开发、部署和评估解决方案，包含对话系统本体和两套互补的评估工具。
 
-## 项目意图
+## 1. 项目意图
 
 本项目旨在构建一个完整的AI对话系统生态，包括：
 
@@ -13,30 +13,62 @@
 
 通过这四个组件的协同工作，实现从开发、测试到生产的完整AI对话系统解决方案。
 
-## 评估理论基础
+## 2. 项目展示
+
+### 2.1 一键启动工具 (start.py)
+
+本项目提供了统一的启动脚本 `start.py`，让您轻松管理和使用所有功能：
+
+**交互式模式**（推荐新手使用）：
+```bash
+python start.py
+```
+
+**直接启动模式**（适合熟练用户）：
+```bash
+python start.py easychat              # CLI对话模式
+python start.py easychat -- --api     # API服务模式
+python start.py easyeval              # 快速评估
+python start.py easyeval2             # 智能评估
+python start.py easyeval2 -- --use-local-api # 本地API评估
+```
+
+**功能菜单**：
+- 🗣️ **对话功能**：EasyChat CLI模式、API模式
+- 📊 **评估功能**：easyEval快速评估、easyEval2智能评估
+- 🔧 **工具功能**：环境检查、项目信息
+
+### 2.2 系统交互概览
+
+![系统架构图](./pics/image%202.png)
+
+### 2.3 评估流程示例
+![评估流程图](./pics/image%204.png)
+
+## 3. Agent评估的基本概念
 
 本项目基于系统性的AI Agent评估理论，详见 [AI Agent评估指南](./study.md)。该指南涵盖：
 
-### 核心评估维度
+### 3.1 核心评估维度
 - **能力与效果**：任务完成率、准确性、输出质量
 - **效率与性能**：响应时间、资源消耗、成本控制
 - **健壮性与可靠性**：异常处理、边界情况、稳定性
 - **安全性与对齐**：内容安全、价值观对齐、风险控制
 
-### 问答型Agent专项评估
+### 3.2 问答型Agent专项评估
 针对对话系统的三大核心指标：
 - **准确性（Accuracy）**：答案的正确性和相关性
 - **响应效率（Efficiency）**：回答速度和系统吞吐量
 - **用户体验（User Experience）**：交互自然度和满意度
 
-### 评估方法论
+### 3.3 评估方法论
 - **人工评估**：专家审核、用户调研、A/B测试
 - **自动评估**：指标计算、基准对比、语义分析
 - **混合评估**：结合人工和自动方法的综合评估
 
 通过理论指导实践，确保评估的科学性和有效性。
 
-## 项目结构
+## 4. 项目结构
 
 ```
 EasyEvaluator/
@@ -57,9 +89,9 @@ EasyEvaluator/
 └── README.md           # 项目总览（本文件）
 ```
 
-## 子项目关联关系
+## 5. 子项目关联关系
 
-### 核心架构图
+### 5.1 核心架构图
 
 ```mermaid
 graph LR
@@ -133,16 +165,16 @@ graph LR
     class TC dataBox
 ```
 
-### 工作流程
+### 5.2 工作流程
 
 1. **开发阶段**：使用 EasyChat CLI模式进行功能开发和调试
 2. **快速验证**：使用 easyEval 进行基础功能完整性检查
 3. **深度评估**：使用 easyEval2 进行语义质量分析
 4. **生产部署**：EasyChat API模式提供服务，定期使用评估工具监控质量
 
-### 系统交互时序图
+### 5.3 系统交互时序图
 
-#### EasyChat CLI模式时序图
+#### 5.3.1 EasyChat CLI模式时序图
 ```mermaid
 sequenceDiagram
     participant Dev as 开发者
@@ -174,7 +206,7 @@ sequenceDiagram
     Dev->>Dev: 分析结果，优化代码
 ```
 
-#### 生产评估时序图
+#### 5.3.2 生产评估时序图
 ```mermaid
 sequenceDiagram
     participant User as 用户
@@ -209,7 +241,7 @@ sequenceDiagram
     end
 ```
 
-#### 完整评估流程时序图
+#### 5.3.3 完整评估流程时序图
 ```mermaid
 sequenceDiagram
     participant Dev as 开发者
@@ -255,9 +287,9 @@ sequenceDiagram
     end
 ```
 
-## 快速开始
+## 6. 快速开始
 
-### 一键启动（推荐）
+### 6.1 一键启动（推荐）
 
 我们提供了统一的启动脚本，让您轻松使用所有功能：
 
@@ -273,7 +305,7 @@ python start.py easyeval2             # 智能评估
 python start.py easyeval2 -- --dry-run # 配置验证
 ```
 
-### 环境准备
+### 6.2 环境准备
 
 ```bash
 # 1. 克隆项目
@@ -290,7 +322,7 @@ cd easychat && pip install -r requirements.txt && cd ..
 cd easyEval2 && pip install -r requirements.txt && cd ..
 ```
 
-### 配置API密钥
+### 6.3 配置API密钥
 
 在每个子项目目录下创建 `.env` 文件：
 
@@ -304,9 +336,9 @@ LOCAL_API_BASE_URL=http://localhost:11434
 LOCAL_API_MODEL=qwen2.5:7b
 ```
 
-### 使用方法
+### 6.4 使用方法
 
-#### 1. 启动对话系统
+#### 6.4.1 启动对话系统
 
 ```bash
 cd easychat
@@ -319,7 +351,7 @@ python main.py
 python main.py --api
 ```
 
-#### 2. 快速评估（开发阶段推荐）
+#### 6.4.2 快速评估（开发阶段推荐）
 
 ```bash
 cd easyEval
@@ -329,7 +361,7 @@ pip install -r requirements.txt
 python src/eval.py
 ```
 
-#### 3. 智能评估（生产阶段推荐）
+#### 6.4.3 智能评估（生产阶段推荐）
 
 ```bash
 cd easyEval2
@@ -342,7 +374,7 @@ python main.py --use-local-api --limit 10
 python main.py --use-deepseek-api --limit 5
 ```
 
-## 评估对比
+## 7. 评估对比
 
 | 特性 | easyEval | easyEval2 |
 |------|----------|----------|
@@ -355,98 +387,98 @@ python main.py --use-deepseek-api --limit 5
 | **适用场景** | 开发调试 | 生产监控 |
 | **推荐用途** | 快速验证 | 深度分析 |
 
-## 技术栈
+## 8. 技术栈
 
-### 共同依赖
+### 8.1 共同依赖
 - **Python 3.8+**：主要开发语言
 - **OpenAI SDK**：API客户端
 - **python-dotenv**：环境配置管理
 - **requests**：HTTP请求处理
 
-### EasyChat 特有
+### 8.2 EasyChat 特有
 - **Flask**：Web API框架
 - **流式响应**：实时对话体验
 
-### easyEval 特有
+### 8.3 easyEval 特有
 - **subprocess**：外部程序调用
 - **tqdm**：进度条显示
 - **关键词匹配**：快速评估算法
 
-### easyEval2 特有
+### 8.4 easyEval2 特有
 - **Rich**：美观的终端界面
 - **Pydantic**：数据验证
 - **AI语义分析**：深度评估算法
 
-## 使用场景
+## 9. 使用场景
 
-### 开发阶段
+### 9.1 开发阶段
 1. 使用 **EasyChat CLI模式** 进行功能开发
 2. 使用 **easyEval** 快速验证基础功能
 3. 迭代优化对话逻辑
 
-### 测试阶段
+### 9.2 测试阶段
 1. 启动 **EasyChat API服务**
 2. 使用 **easyEval2 本地API模式** 进行详细评估
 3. 分析评估报告，优化系统性能
 
-### 生产阶段
+### 9.3 生产阶段
 1. 部署 **EasyChat API服务**
 2. 定期使用 **easyEval2 DeepSeek API模式** 监控质量
 3. 根据评估结果持续优化
 
-### 全面评估
+### 9.4 全面评估
 - 结合使用两套评估工具
 - 获得多维度评估结果
 - 确保系统质量和稳定性
 
-## 配置说明
+## 10. 配置说明
 
-### API配置
+### 10.1 API配置
 - **DeepSeek API**：高质量对话和评估
 - **本地API**：降低成本的评估方案
 - **EasyChat API**：对话服务接口
 
-### 测试用例
+### 10.2 测试用例
 - **通用对话**：日常交流场景
 - **知识问答**：专业知识查询
 - **创意写作**：文本生成任务
 - **技术支持**：问题解决场景
 
-## 开发指南
+## 11. 开发指南
 
-### 添加新的测试用例
+### 11.1 添加新的测试用例
 1. 编辑 `tests/test_cases.json`
 2. 按照现有格式添加测试用例
 3. 运行评估验证效果
 
-### 自定义评估维度
+### 11.2 自定义评估维度
 1. 修改 `easyEval2/config/prompts.py`
 2. 调整评估提示词
 3. 更新评分逻辑
 
-### 扩展API功能
+### 11.3 扩展API功能
 1. 修改 `easychat/main.py`
 2. 添加新的API端点
 3. 更新文档说明
 
-## 注意事项
+## 12. 注意事项
 
 1. **API密钥安全**：请妥善保管API密钥，不要提交到版本控制
 2. **成本控制**：使用DeepSeek API时注意控制调用频率
 3. **本地API**：推荐优先使用本地API进行开发和测试
 4. **评估频率**：生产环境建议定期而非实时评估
 
-## 许可证
+## 13. 许可证
 
 MIT License - 详见各子项目的LICENSE文件
 
-## 贡献
+## 14. 贡献
 
 欢迎提交Issue和Pull Request来改进项目！
 
 项目仓库：https://github.com/Coldplay-now/EasyEvaluator.git
 
-## 联系方式
+## 15. 联系方式
 
 如有问题或建议，请通过以下方式联系：
 - 提交GitHub Issue：https://github.com/Coldplay-now/EasyEvaluator/issues
