@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "evaluation_time": "2025-09-15T11:57:03.346300",
+    "evaluator_version": "2.0.0",
+    "total_tests": 5,
+    "statistics": {
+      "total_tests": 15,
+      "completed_tests": 5,
+      "failed_tests": 0,
+      "average_score": 67.8,
+      "total_api_time": 41.300429582595825,
+      "start_time": "2025-09-15T11:56:15.628126",
+      "end_time": "2025-09-15T11:57:03.346196"
+    }
+  },
+  "results": [
+    {
+      "test_id": "general_001",
+      "question": "什么是人工智能？",
+      "answer": "人工智能是计算机科学的一个分支，致力于创建能够执行通常需要人类智能的任务的系统。",
+      "semantic_score": 92,
+      "evaluation_reason": "回答高度相关且准确，完整定义了人工智能的核心概念，表达清晰简洁，对初学者具有很好的帮助作用",
+      "dimension_scores": {
+        "relevance": 28,
+        "accuracy": 24,
+        "completeness": 19,
+        "usefulness": 14,
+        "expression": 7
+      },
+      "scenario": "knowledge",
+      "timestamp": "2025-09-15T11:56:23.710894",
+      "api_response_time": 8.06266713142395,
+      "raw_response": null
+    },
+    {
+      "test_id": "general_002",
+      "question": "如何学习编程？",
+      "answer": "学习编程可以从选择一门编程语言开始，比如Python，然后通过在线教程、书籍和实践项目来逐步提高技能。",
+      "semantic_score": 82,
+      "evaluation_reason": "回答提供了学习编程的基本路径，包括选择语言、学习资源和实践方法，相关性较好但缺乏具体细节和个性化建议",
+      "dimension_scores": {
+        "relevance": 27,
+        "accuracy": 21,
+        "completeness": 16,
+        "usefulness": 12,
+        "expression": 6
+      },
+      "scenario": "general",
+      "timestamp": "2025-09-15T11:56:31.721587",
+      "api_response_time": 8.004492044448853,
+      "raw_response": null
+    },
+    {
+      "test_id": "creative_001",
+      "question": "推荐一部好看的电影",
+      "answer": "这是一个很好的问题，我会尽力为您提供帮助。不过我需要更多信息才能给出准确的回答。",
+      "semantic_score": 45,
+      "evaluation_reason": "AI回答虽然礼貌但完全回避了用户的核心请求。用户明确要求推荐电影，但AI却要求更多信息而没有提供任何实际推荐，导致回答缺乏相关性、完整性和有用性。虽然表达清晰，但未能满足用户的基本需求。",
+      "dimension_scores": {
+        "relevance": 5,
+        "accuracy": 15,
+        "completeness": 5,
+        "usefulness": 5,
+        "expression": 15
+      },
+      "scenario": "creative",
+      "timestamp": "2025-09-15T11:56:40.642068",
+      "api_response_time": 8.91509199142456,
+      "raw_response": null
+    },
+    {
+      "test_id": "technical_001",
+      "question": "Python中如何处理异常？",
+      "answer": "这是一个很好的问题，我会尽力为您提供帮助。不过我需要更多信息才能给出准确的回答。",
+      "semantic_score": 35,
+      "evaluation_reason": "AI回答完全回避了用户的技术问题，没有提供任何关于Python异常处理的具体信息，只是要求更多细节，这在技术问答场景中是不合适的",
+      "dimension_scores": {
+        "relevance": 5,
+        "accuracy": 10,
+        "completeness": 5,
+        "usefulness": 5,
+        "expression": 10
+      },
+      "scenario": "technical",
+      "timestamp": "2025-09-15T11:56:49.299262",
+      "api_response_time": 8.651515245437622,
+      "raw_response": null
+    },
+    {
+      "test_id": "general_003",
+      "question": "今天天气怎么样？",
+      "answer": "抱歉，我无法获取实时天气信息。建议您查看天气预报应用或网站获取准确的天气信息。",
+      "semantic_score": 85,
+      "evaluation_reason": "回答准确承认无法提供实时天气信息，并给出了实用的替代方案，相关性高但缺乏具体性",
+      "dimension_scores": {
+        "relevance": 28,
+        "accuracy": 24,
+        "completeness": 17,
+        "usefulness": 12,
+        "expression": 4
+      },
+      "scenario": "general",
+      "timestamp": "2025-09-15T11:56:56.971604",
+      "api_response_time": 7.66666316986084,
+      "raw_response": null
+    }
+  ],
+  "summary": {
+    "total_tests": 5,
+    "average_score": 67.8,
+    "max_score": 92,
+    "min_score": 35,
+    "score_distribution": {
+      "excellent": 1,
+      "good": 2,
+      "average": 0,
+      "poor": 0,
+      "very_poor": 2
+    },
+    "scenario_statistics": {
+      "knowledge": {
+        "count": 1,
+        "total_score": 92,
+        "average_score": 92.0
+      },
+      "general": {
+        "count": 2,
+        "total_score": 167,
+        "average_score": 83.5
+      },
+      "creative": {
+        "count": 1,
+        "total_score": 45,
+        "average_score": 45.0
+      },
+      "technical": {
+        "count": 1,
+        "total_score": 35,
+        "average_score": 35.0
+      }
+    },
+    "performance_metrics": {
+      "total_api_time": 41.300429582595825,
+      "average_api_time": 8.260085916519165,
+      "success_rate": 33.33333333333333
+    }
+  }
+}

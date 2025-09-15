@@ -1,0 +1,13 @@
+# EasyChat 项目依赖
+
+# 用于读取 .env 配置文件
+python-dotenv>=1.0.0
+
+# OpenAI 兼容的 API 客户端
+openai>=1.0.0
+
+# Flask Web框架（用于API服务器）
+flask>=2.0.0
+
+# HTTP 请求库（通常已内置，但明确列出以确保兼容性）
+requests>=2.25.0

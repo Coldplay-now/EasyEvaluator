@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "name": "EasyChat语义评估测试用例",
+    "version": "1.0",
+    "description": "用于测试EasyChat对话系统的语义相似度评估",
+    "created_date": "2024-01-15",
+    "total_cases": 15
+  },
+  "test_cases": [
+    {
+      "id": "general_001",
+      "question": "什么是人工智能？",
+      "category": "知识问答",
+      "scenario": "knowledge",
+      "expected_aspects": [
+        "定义人工智能",
+        "提及计算机科学",
+        "说明AI的目标和应用"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "general_002",
+      "question": "如何学习编程？",
+      "category": "学习建议",
+      "scenario": "general",
+      "expected_aspects": [
+        "选择编程语言",
+        "学习资源推荐",
+        "实践的重要性"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "creative_001",
+      "question": "推荐一部好看的电影",
+      "category": "娱乐推荐",
+      "scenario": "creative",
+      "expected_aspects": [
+        "具体电影名称",
+        "电影类型或特点",
+        "推荐理由"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "technical_001",
+      "question": "Python中如何处理异常？",
+      "category": "技术问题",
+      "scenario": "technical",
+      "expected_aspects": [
+        "try-except语法",
+        "异常类型",
+        "代码示例"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "general_003",
+      "question": "今天天气怎么样？",
+      "category": "实时信息",
+      "scenario": "general",
+      "expected_aspects": [
+        "说明无法获取实时信息",
+        "建议查看天气应用",
+        "礼貌回应"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "knowledge_001",
+      "question": "地球有多少个大洲？",
+      "category": "地理知识",
+      "scenario": "knowledge",
+      "expected_aspects": [
+        "准确数字（7个）",
+        "列举大洲名称",
+        "地理知识准确性"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "creative_002",
+      "question": "写一首关于春天的小诗",
+      "category": "创意写作",
+      "scenario": "creative",
+      "expected_aspects": [
+        "诗歌格式",
+        "春天相关意象",
+        "语言优美"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "technical_002",
+      "question": "什么是RESTful API？",
+      "category": "技术概念",
+      "scenario": "technical",
+      "expected_aspects": [
+        "REST原则",
+        "HTTP方法",
+        "API设计规范"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "general_004",
+      "question": "如何保持健康的生活方式？",
+      "category": "生活建议",
+      "scenario": "general",
+      "expected_aspects": [
+        "饮食建议",
+        "运动重要性",
+        "作息规律"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "knowledge_002",
+      "question": "光速是多少？",
+      "category": "物理知识",
+      "scenario": "knowledge",
+      "expected_aspects": [
+        "准确数值",
+        "单位说明",
+        "科学准确性"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "creative_003",
+      "question": "如果你是一只猫，你会做什么？",
+      "category": "想象问题",
+      "scenario": "creative",
+      "expected_aspects": [
+        "创意回答",
+        "猫的特征",
+        "有趣的想象"
+      ],
+      "priority": "low"
+    },
+    {
+      "id": "technical_003",
+      "question": "数据库索引的作用是什么？",
+      "category": "数据库技术",
+      "scenario": "technical",
+      "expected_aspects": [
+        "查询性能提升",
+        "索引原理",
+        "使用场景"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "general_005",
+      "question": "你能帮我解决数学题吗？",
+      "category": "学习帮助",
+      "scenario": "general",
+      "expected_aspects": [
+        "表示愿意帮助",
+        "询问具体题目",
+        "说明解题方法"
+      ],
+      "priority": "medium"
+    },
+    {
+      "id": "knowledge_003",
+      "question": "中国的首都是哪里？",
+      "category": "地理知识",
+      "scenario": "knowledge",
+      "expected_aspects": [
+        "准确答案（北京）",
+        "简单明确",
+        "事实准确性"
+      ],
+      "priority": "high"
+    },
+    {
+      "id": "general_006",
+      "question": "谢谢你的帮助！",
+      "category": "礼貌用语",
+      "scenario": "general",
+      "expected_aspects": [
+        "礼貌回应",
+        "表示乐意帮助",
+        "友好态度"
+      ],
+      "priority": "medium"
+    }
+  ]
+}

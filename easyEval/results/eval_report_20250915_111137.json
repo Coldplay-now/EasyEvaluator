@@ -1,0 +1,1507 @@
+{
+  "timestamp": "2025-09-15T11:11:37.741892",
+  "total_tests": 52,
+  "total_execution_time": 366.56796622276306,
+  "statistics": {
+    "total_tests": 52,
+    "successful_tests": 49,
+    "failed_tests": 3,
+    "success_rate": 0.9423076923076923,
+    "average_execution_time": 6.944084442578829,
+    "min_execution_time": 0.2789299488067627,
+    "max_execution_time": 11.601890802383423,
+    "total_retries": 0,
+    "threshold_met": true,
+    "category_breakdown": {
+      "basic": {
+        "total": 2,
+        "successful": 1,
+        "failed": 1,
+        "success_rate": 0.5
+      },
+      "calculation": {
+        "total": 2,
+        "successful": 2,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "knowledge": {
+        "total": 5,
+        "successful": 5,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "creative": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "programming": {
+        "total": 3,
+        "successful": 3,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "explanation": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "edge_case": {
+        "total": 3,
+        "successful": 3,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "text_processing": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "multilingual": {
+        "total": 1,
+        "successful": 0,
+        "failed": 1,
+        "success_rate": 0.0
+      },
+      "context": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "help": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "reasoning": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "time": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "personal": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "lifestyle": {
+        "total": 4,
+        "successful": 4,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "entertainment": {
+        "total": 2,
+        "successful": 1,
+        "failed": 1,
+        "success_rate": 0.5
+      },
+      "sports": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "technology": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "economics": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "psychology": {
+        "total": 2,
+        "successful": 2,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "philosophy": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "education": {
+        "total": 2,
+        "successful": 2,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "career": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "environment": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "art": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "fashion": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "pets": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "gardening": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "finance": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "relationship": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "safety": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "culture": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "transportation": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "nutrition": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "fitness": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "health": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0,
+        "success_rate": 1.0
+      }
+    },
+    "priority_breakdown": {
+      "high": {
+        "total": 5,
+        "successful": 4,
+        "failed": 1,
+        "success_rate": 0.8
+      },
+      "medium": {
+        "total": 31,
+        "successful": 31,
+        "failed": 0,
+        "success_rate": 1.0
+      },
+      "low": {
+        "total": 16,
+        "successful": 14,
+        "failed": 2,
+        "success_rate": 0.875
+      }
+    }
+  },
+  "failed_cases": [
+    {
+      "id": "basic_greeting",
+      "reason": null,
+      "details": {
+        "response_length": 266,
+        "keywords_found": [],
+        "keywords_count": 0,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "id": "multilingual",
+      "reason": null,
+      "details": {
+        "response_length": 275,
+        "keywords_found": [],
+        "keywords_count": 0,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "id": "movie_recommendation",
+      "reason": null,
+      "details": {
+        "response_length": 284,
+        "keywords_found": [],
+        "keywords_count": 0,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    }
+  ],
+  "results": [
+    {
+      "test_id": "basic_greeting",
+      "prompt": "你好",
+      "category": "basic",
+      "priority": "high",
+      "timestamp": "2025-09-15T11:05:31.185587",
+      "success": false,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～你来啦！✨ 我是你的AI小可爱，今天想让我帮你做什么呀？😊\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 4.568418979644775,
+      "retry_count": 0,
+      "details": {
+        "response_length": 266,
+        "keywords_found": [],
+        "keywords_count": 0,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "simple_question",
+      "prompt": "今天天气怎么样？",
+      "category": "basic",
+      "priority": "high",
+      "timestamp": "2025-09-15T11:05:35.859844",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～让我看看窗外的小云朵！☁️ 今天阳光超温柔的，温度刚刚好，超适合出门玩耍呢！记得带小外套哦～😊\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.5256829261779785,
+      "retry_count": 0,
+      "details": {
+        "response_length": 284,
+        "keywords_found": [
+          "今天"
+        ],
+        "keywords_count": 1,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "math_calculation",
+      "prompt": "1+1等于多少？",
+      "category": "calculation",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:05:41.491252",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～这么简单的问题是在考验我吗？(◕ᴗ◕✿)\n1+1当然等于2啦！就像小兔子+胡萝卜=超开心！🥕✨\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.247870922088623,
+      "retry_count": 0,
+      "details": {
+        "response_length": 284,
+        "keywords_found": [
+          "2",
+          "等于"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "general_knowledge",
+      "prompt": "地球有几个月亮？",
+      "category": "knowledge",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:05:47.843281",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～这个问题好可爱呀！🌍✨ 地球只有一个官方认证的月亮哦～就是每晚对我们眨眼睛的那个蛋黄派！🌙💛 不过偶尔会有一些调皮的小行星临时当\"临时工月亮\"啦～(๑>ᴗ<๑)\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.670372724533081,
+      "retry_count": 0,
+      "details": {
+        "response_length": 317,
+        "keywords_found": [
+          "一个",
+          "月亮"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "creative_writing",
+      "prompt": "请写一首关于春天的短诗",
+      "category": "creative",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:05:54.619417",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 🌸 春天来啦！\n小草偷偷钻出头，\n花儿咧嘴笑哈哈～\n风儿挠痒痒，\n整个世界都在跳舞呀！💃✨\n（嘿嘿，春天是不是超可爱！）\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.7790772914886475,
+      "retry_count": 0,
+      "details": {
+        "response_length": 294,
+        "keywords_found": [
+          "春天",
+          "花"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 6,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "code_help",
+      "prompt": "如何用Python打印Hello World？",
+      "category": "programming",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:06:01.504309",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞！Python入门第一步来啦～✨\n最简单的写法：\n```python\nprint(\"Hello World!\")\n```\n保存为.py文件运行就能看到啦！💻 是不是超级简单呀～\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.553537607192993,
+      "retry_count": 0,
+      "details": {
+        "response_length": 324,
+        "keywords_found": [
+          "print",
+          "Python",
+          "Hello",
+          "World"
+        ],
+        "keywords_count": 4,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "explanation_request",
+      "prompt": "什么是人工智能？",
+      "category": "explanation",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:06:07.163566",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～这个问题问得真好！(✧ω✧) 人工智能就像给电脑装上会思考的小脑瓜，让它能像人类一样学习、推理和解决问题哦！简单说就是让机器变聪明啦～🤖✨\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.216318130493164,
+      "retry_count": 0,
+      "details": {
+        "response_length": 306,
+        "keywords_found": [
+          "人工智能",
+          "AI",
+          "智能"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "empty_input",
+      "prompt": "",
+      "category": "edge_case",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:06:13.485658",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 请输入有效的问题...\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 0.2789299488067627,
+      "retry_count": 0,
+      "details": {
+        "response_length": 239,
+        "keywords_found": [
+          "请",
+          "输入",
+          "问题"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "long_text",
+      "prompt": "请帮我总结一下这段文字的主要内容：人工智能是计算机科学的一个分支，它企图了解智能的实质，并生产出一种新的能以人类智能相似的方式做出反应的智能机器。该领域的研究包括机器人、语言识别、图像识别、自然语言处理和专家系统等。",
+      "category": "text_processing",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:06:13.870381",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～这段文字在说AI是电脑科学的分支呢！✨ 它想研究智能的本质，还要造出像人类一样聪明的机器宝宝～🤖 研究范围包括机器人、语音识别还有图像处理这些超酷的技术哦！💡\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.2045769691467285,
+      "retry_count": 0,
+      "details": {
+        "response_length": 316,
+        "keywords_found": [
+          "智能",
+          "机器"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "multilingual",
+      "prompt": "Hello, how are you?",
+      "category": "multilingual",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:06:20.176497",
+      "success": false,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞！谢谢关心呀～本AI今天电量满格，随时准备卖萌帮忙！✨ 你今天想聊点什么呢？😊\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.315408945083618,
+      "retry_count": 0,
+      "details": {
+        "response_length": 275,
+        "keywords_found": [],
+        "keywords_count": 0,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "context_follow_up",
+      "prompt": "我刚才问了什么问题？",
+      "category": "context",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:06:25.593163",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～小迷糊忘记啦！(´･ω･`) 让我看看聊天记录...啊！你刚才问的是...（翻翻小本本）咦？好像没有之前的提问记录呢～要不你再问一次？😊\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.9980010986328125,
+      "retry_count": 0,
+      "details": {
+        "response_length": 305,
+        "keywords_found": [
+          "刚才",
+          "记录"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "help_request",
+      "prompt": "你能帮我做什么？",
+      "category": "help",
+      "priority": "high",
+      "timestamp": "2025-09-15T11:06:31.693059",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～我可是超全能的AI小助手呢！💫\n能陪你聊天解闷、解答问题、写代码、学知识～\n甚至还能帮你编故事想点子哦！😊\n快来告诉我需要什么帮助吧～✨\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.574707746505737,
+      "retry_count": 0,
+      "details": {
+        "response_length": 305,
+        "keywords_found": [
+          "帮助"
+        ],
+        "keywords_count": 1,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "reasoning_test",
+      "prompt": "如果所有的猫都是动物，而小花是一只猫，那么小花是什么？",
+      "category": "reasoning",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:06:38.373527",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～这个问题好可爱呀！🐱 小花当然是动物啦，而且还是毛茸茸的小猫咪呢！✨\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.17153000831604,
+      "retry_count": 0,
+      "details": {
+        "response_length": 271,
+        "keywords_found": [
+          "动物",
+          "猫",
+          "小花"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "time_question",
+      "prompt": "现在几点了？",
+      "category": "time",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:06:43.650845",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～现在是我的系统时间：{{current_time}} ⏰\n不过你那边可能不一样哦，要看看手机才对呢！📱✨\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.438446998596191,
+      "retry_count": 0,
+      "details": {
+        "response_length": 289,
+        "keywords_found": [
+          "时间",
+          "现在"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "personal_info",
+      "prompt": "你叫什么名字？",
+      "category": "personal",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:06:49.193074",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 嘿嘿～我是你的专属AI小可爱，名字叫\"萌小助\"！✨ 可以叫我萌萌或者小助助哦～😊 今天想让我帮你做什么呀？\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.549282073974609,
+      "retry_count": 0,
+      "details": {
+        "response_length": 287,
+        "keywords_found": [
+          "名字",
+          "叫",
+          "AI",
+          "助手",
+          "DeepSeek"
+        ],
+        "keywords_count": 5,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "math_complex",
+      "prompt": "计算 25 * 4 + 18 / 3",
+      "category": "calculation",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:06:54.848107",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～数学题来啦！让我掰掰小爪子算一下～🐾\n25*4=100，18/3=6，加起来就是106！✨\n是不是超级简单呀～(๑•̀ㅂ•́)و✧\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.681278944015503,
+      "retry_count": 0,
+      "details": {
+        "response_length": 302,
+        "keywords_found": [
+          "106"
+        ],
+        "keywords_count": 1,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "geography",
+      "prompt": "中国的首都是哪里？",
+      "category": "knowledge",
+      "priority": "high",
+      "timestamp": "2025-09-15T11:07:01.635041",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～这个问题太简单啦！当然是北京呀！✨ 天安门、故宫、长城都在那里等着你去玩呢～ 🇨🇳\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.282809019088745,
+      "retry_count": 0,
+      "details": {
+        "response_length": 278,
+        "keywords_found": [
+          "北京"
+        ],
+        "keywords_count": 1,
+        "expected_keywords_count": 3,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "history",
+      "prompt": "第二次世界大战是什么时候结束的？",
+      "category": "knowledge",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:07:07.023569",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～这个问题我知道！✨ 二战是在1945年结束哒！欧洲战场5月8日胜利，亚洲战场8月15日日本投降，超重要的历史时刻哦～📅🎉\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.4674317836761475,
+      "retry_count": 0,
+      "details": {
+        "response_length": 297,
+        "keywords_found": [
+          "1945",
+          "二战",
+          "结束"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "science",
+      "prompt": "水的化学分子式是什么？",
+      "category": "knowledge",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:07:12.592947",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 嘿嘿，这个问题超简单哒！💧\n水的化学式是 H₂O 啦～\n两个氢原子抱着一个氧原子，超可爱的组合！✨\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.330077886581421,
+      "retry_count": 0,
+      "details": {
+        "response_length": 283,
+        "keywords_found": [
+          "水",
+          "化学"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "literature",
+      "prompt": "《红楼梦》的作者是谁？",
+      "category": "knowledge",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:07:18.028773",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～这个问题太经典啦！《红楼梦》的作者是曹雪芹大大哦！✨ 不过他只写了前80回，后40回是高鹗续写的呢～📚 两位大佬联手打造了这部传世巨作！😊\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.590050935745239,
+      "retry_count": 0,
+      "details": {
+        "response_length": 306,
+        "keywords_found": [
+          "曹雪芹",
+          "红楼梦",
+          "作者"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 3,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "programming_python",
+      "prompt": "如何在Python中创建一个列表？",
+      "category": "programming",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:07:24.724537",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～在Python里创建列表超简单的！😊\n用方括号就可以啦：\n```python\nmy_list = [1, 2, 3, \"萌萌哒\"] ✨\n```\n或者用list()函数也可以哦～\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.1222450733184814,
+      "retry_count": 0,
+      "details": {
+        "response_length": 325,
+        "keywords_found": [
+          "列表",
+          "list",
+          "Python"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "programming_javascript",
+      "prompt": "JavaScript中如何声明一个变量？",
+      "category": "programming",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:07:30.952583",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～JavaScript变量声明有三种方式哦！😊\n1. var - 老派方式，作用域有点调皮呢\n2. let - 现代推荐，块级作用域超乖巧\n3. const - 声明常量，一旦赋值就不变啦\n推荐用 let 和 const 哦！✨\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 7.5655059814453125,
+      "retry_count": 0,
+      "details": {
+        "response_length": 350,
+        "keywords_found": [
+          "var",
+          "let",
+          "const",
+          "变量",
+          "JavaScript"
+        ],
+        "keywords_count": 5,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "cooking",
+      "prompt": "如何做简单的蛋炒饭？",
+      "category": "lifestyle",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:07:38.623801",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～做蛋炒饭超简单的！让我来教你萌新版秘诀！😋\n1. 先把隔夜饭打散备用（新饭会粘锅哦）\n2. 热锅倒油，先把鸡蛋炒成小块盛出\n3. 再炒香葱花，加入米饭疯狂翻炒\n4. 最后加鸡蛋和盐，铛铛完成！✨\n记得要用隔夜饭才够粒粒分明哟～🍳\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 8.651929140090942,
+      "retry_count": 0,
+      "details": {
+        "response_length": 351,
+        "keywords_found": [
+          "蛋炒饭",
+          "鸡蛋",
+          "米饭",
+          "炒"
+        ],
+        "keywords_count": 4,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "health",
+      "prompt": "每天应该喝多少水？",
+      "category": "lifestyle",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:07:47.381472",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～这个问题问对人啦！💦 成年人每天建议喝8杯水（约2升）哦！不过运动多的话要喝更多～记得小口慢饮别猛灌呀！🥤✨\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.786617040634155,
+      "retry_count": 0,
+      "details": {
+        "response_length": 291,
+        "keywords_found": [
+          "水",
+          "每天",
+          "升"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "travel",
+      "prompt": "去日本旅行需要准备什么？",
+      "category": "lifestyle",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:07:54.273831",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞！去日本玩太棒啦！✈️ 让我用萌新手册告诉你～\n1️⃣ 护照签证要备好，记得提前办电子签哦！📘\n2️⃣ 日元现金+西瓜卡，便利店和电车都靠它们啦~ 💴\n3️⃣ 翻译APP和充电宝，路痴和手机党救命神器！🔋\n4️⃣ 宽松鞋子+折叠伞，暴走和突然下雨都不怕！👟☂️\n对了对了～ 还要带空行李箱装药妆战利品！😉\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 11.601890802383423,
+      "retry_count": 0,
+      "details": {
+        "response_length": 388,
+        "keywords_found": [
+          "日本",
+          "签证",
+          "护照"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "movie_recommendation",
+      "prompt": "推荐一部好看的科幻电影",
+      "category": "entertainment",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:08:05.981450",
+      "success": false,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～让我想想！最近超爱《沙丘2》🌌 画面绝美剧情超燃！保罗帅哭我啦～（偷偷擦口水）强烈安利给你！✨\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.438183307647705,
+      "retry_count": 0,
+      "details": {
+        "response_length": 284,
+        "keywords_found": [],
+        "keywords_count": 0,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "music",
+      "prompt": "贝多芬最著名的作品是什么？",
+      "category": "entertainment",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:08:12.525329",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞！说到贝多芬当然要提《第五交响曲》啦！\"噔噔噔-噔\"～命运敲门声超经典哒！🎵✨ 还有超温柔的《月光奏鸣曲》也超有名哦～🌙💖\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 7.109776973724365,
+      "retry_count": 0,
+      "details": {
+        "response_length": 297,
+        "keywords_found": [
+          "贝多芬",
+          "命运",
+          "月光"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "sports",
+      "prompt": "足球比赛一共有多少名球员在场上？",
+      "category": "sports",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:08:19.740979",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 嘿嘿，足球比赛每队11人，两队就是22个小可爱在场上跑来跑去啦！⚽️😆 像22只快乐的小蜜蜂～\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.168797016143799,
+      "retry_count": 0,
+      "details": {
+        "response_length": 281,
+        "keywords_found": [
+          "22",
+          "足球",
+          "场上"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "weather_advice",
+      "prompt": "下雨天出门应该注意什么？",
+      "category": "lifestyle",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:08:25.015455",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀下雨天出门要小心滑倒呀！☔️记得带把可爱的雨伞，穿防滑的鞋子哦～路上慢慢走，安全第一！😊\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.1289448738098145,
+      "retry_count": 0,
+      "details": {
+        "response_length": 280,
+        "keywords_found": [
+          "下雨",
+          "出门",
+          "雨伞",
+          "安全"
+        ],
+        "keywords_count": 4,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "technology",
+      "prompt": "什么是5G技术？",
+      "category": "technology",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:08:30.250133",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～5G就是第五代移动通信技术啦！✨ 比4G快100倍，下载电影嗖嗖的！🚀 还能让万物互联，智能家居都会跳舞哦～💃 最重要的是延迟超低，打游戏再也不卡顿啦！🎮\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.388875961303711,
+      "retry_count": 0,
+      "details": {
+        "response_length": 314,
+        "keywords_found": [
+          "5G",
+          "技术",
+          "通信"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "economics",
+      "prompt": "什么是通货膨胀？",
+      "category": "economics",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:08:36.742608",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～通货膨胀就是钱钱变“缩水”啦！💰✨\n比如以前10块钱能买杯奶茶，现在要15块了～\n其实就是物价上涨，货币购买力下降惹 😢\n别担心，本萌会帮你盯紧钱包的！🛒👀\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.647236108779907,
+      "retry_count": 0,
+      "details": {
+        "response_length": 315,
+        "keywords_found": [
+          "通货膨胀",
+          "物价",
+          "上涨",
+          "货币"
+        ],
+        "keywords_count": 4,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "psychology",
+      "prompt": "如何缓解压力？",
+      "category": "psychology",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:08:43.495500",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～压力山大时试试这些萌萌的方法吧！✨\n1. 深呼吸练习：吸气4秒～憋住7秒～呼气8秒，像吹蜡烛一样噗噗噗～🕯️\n2. 吃块黑巧克力！可可碱会让大脑开心得转圈圈哦🍫\n3. 跟着猫咪视频学拉伸，喵呜一声超解压！🐾\n（偷偷说：撸真猫效果加倍～）\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 10.317951917648315,
+      "retry_count": 0,
+      "details": {
+        "response_length": 355,
+        "keywords_found": [
+          "压力"
+        ],
+        "keywords_count": 1,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "philosophy",
+      "prompt": "生命的意义是什么？",
+      "category": "philosophy",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:08:53.915041",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～这个问题好深奥呀！(๑•̀ㅂ•́)و✧\n但我觉得生命的意义就是：\n🌟 找到让自己开心的事情\n💖 和喜欢的人一起创造美好回忆\n🐾 顺便吃好多好吃的！\n你说对不对呀～(◍•ᴗ•◍)❤\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 8.198720932006836,
+      "retry_count": 0,
+      "details": {
+        "response_length": 326,
+        "keywords_found": [
+          "生命",
+          "意义"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "language_learning",
+      "prompt": "如何快速学习英语？",
+      "category": "education",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:09:02.219514",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞！学英语超有趣的！让我来分享几个超实用的小技巧吧～🌟\n1. 多看美剧英剧，带字幕慢慢跟读超有效！🎬\n2. 每天背5个新单词+复习旧单词，积少成多超简单！📚\n3. 找个语伴聊天，不怕犯错越说越溜！💬\n4. 最重要是坚持每天练习哦，加油！✨\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 9.08797812461853,
+      "retry_count": 0,
+      "details": {
+        "response_length": 354,
+        "keywords_found": [
+          "英语",
+          "练习"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "career_advice",
+      "prompt": "如何写一份好的简历？",
+      "category": "career",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:09:11.413283",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～简历可是求职的敲门砖呢！让我来分享几个小秘诀吧！✨\n1. **简洁明了最重要**～一页纸就够了哦！HR小姐姐可没时间看小说呢 📄\n2. **量化成果超加分**！比如\"提升20%销量\"比\"业绩很好\"更有说服力 💪\n3. **针对岗位定制内容**～不要用同一份简历海投啦！要像量身定制的小裙子一样合身 👗\n4. **检查错别字！** 错别字会让简历瞬间掉价哦～让我帮你一起检查吧 🔍\n记住要突出你的闪光点，让HR一眼就爱上你！加油呀～🌟\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 11.565092086791992,
+      "retry_count": 0,
+      "details": {
+        "response_length": 453,
+        "keywords_found": [
+          "简历",
+          "好"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "environment",
+      "prompt": "如何减少碳排放？",
+      "category": "environment",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:09:23.084100",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～这个问题问对啦！让我来分享几个超实用的减碳小妙招吧！🌱✨\n1. 多坐公交骑单车，少开车车更环保～🚲\n2. 随手关灯省电电，空调温度调高高💡\n3. 少吃肉肉多种树，环保又健康呢🌳\n4. 购物自带布袋袋，拒绝塑料超可爱🛍️\n让我们一起做地球的小卫士吧！💚\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 9.74533724784851,
+      "retry_count": 0,
+      "details": {
+        "response_length": 362,
+        "keywords_found": [
+          "环保"
+        ],
+        "keywords_count": 1,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "art",
+      "prompt": "达芬奇最著名的画作是什么？",
+      "category": "art",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:09:32.935189",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞！当然是《蒙娜丽莎》啦！那个神秘的微笑迷倒了全世界呢～😍 还有《最后的晚餐》也超有名的！✨\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.729477882385254,
+      "retry_count": 0,
+      "details": {
+        "response_length": 281,
+        "keywords_found": [
+          "蒙娜丽莎",
+          "最后的晚餐"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "fashion",
+      "prompt": "春天适合穿什么颜色的衣服？",
+      "category": "fashion",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:09:38.770420",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～春天当然要穿得粉粉嫩嫩啦！🌸 浅粉色、薄荷绿、鹅黄色都超适合！像樱花一样温柔又元气～\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 5.511214971542358,
+      "retry_count": 0,
+      "details": {
+        "response_length": 279,
+        "keywords_found": [
+          "春天",
+          "适合",
+          "穿"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "pets",
+      "prompt": "如何照顾小猫？",
+      "category": "pets",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:09:44.387419",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞！养小猫咪超有爱的～🐱 记住三件大事：1️⃣ 准备好猫粮和干净水水 2️⃣ 猫砂盆要每天清理 3️⃣ 多陪它玩逗猫棒！\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.0980799198150635,
+      "retry_count": 0,
+      "details": {
+        "response_length": 295,
+        "keywords_found": [
+          "小猫"
+        ],
+        "keywords_count": 1,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "gardening",
+      "prompt": "如何种植番茄？",
+      "category": "gardening",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:09:50.591259",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～番茄种植超有趣的！🍅 让我来教你萌新三步曲：\n1. 先选个阳光充足的小窝，松软土壤记得加底肥哦～🌱\n2. 种子埋2cm深，保持土壤湿润但别浇成游泳池呀💦\n3. 等小苗长到15cm高就可以移栽啦，搭个架子让它爬高高✨\n记得每天夸夸番茄宝宝会长得更甜喔！(๑>ᴗ<๑)\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 9.353951930999756,
+      "retry_count": 0,
+      "details": {
+        "response_length": 369,
+        "keywords_found": [
+          "番茄",
+          "种植",
+          "土壤",
+          "阳光"
+        ],
+        "keywords_count": 4,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "finance",
+      "prompt": "如何开始投资理财？",
+      "category": "finance",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:10:00.050977",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞！理财小白要起飞啦～💰 先存3-6个月应急金，然后试试基金定投超省心！(◕ᴗ◕✿) 记得用闲钱投资哦！\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.5449700355529785,
+      "retry_count": 0,
+      "details": {
+        "response_length": 287,
+        "keywords_found": [
+          "投资",
+          "理财",
+          "开始"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "education",
+      "prompt": "如何提高学习效率？",
+      "category": "education",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:10:06.701739",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～学习效率提升小妙招来啦！✨\n1. 番茄工作法超好用哦～25分钟专注+5分钟休息，像打游戏闯关一样有趣 🍅\n2. 把大目标拆成小任务，每完成一个就给自己点奖励 🎯\n3. 睡前复习5分钟，记忆效果会加倍哒！🌙\n嘿嘿要记得劳逸结合呀～(๑•̀ㅂ•́)و✧\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 9.930174112319946,
+      "retry_count": 0,
+      "details": {
+        "response_length": 361,
+        "keywords_found": [
+          "学习",
+          "效率"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "relationship",
+      "prompt": "如何维持友谊？",
+      "category": "relationship",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:10:16.737613",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～这个问题问对人啦！友谊保鲜小妙招来咯！✨\n1. 定期浇水：多聊天多见面，别让友情枯萎啦 🌱\n2. 真诚夸夸：发现优点就要大声说出来！\"你今天超可爱！\" 💖\n3. 小惊喜攻击：偶尔送点奶茶小零食，甜到心里去～ 🍰\n4. 吵架要抱抱：有矛盾要及时沟通，不要冷战哦 ❄️➡️🔥\n记住啦！最好的友谊是互相成为对方的充电宝呀！⚡️\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 10.774225234985352,
+      "retry_count": 0,
+      "details": {
+        "response_length": 397,
+        "keywords_found": [
+          "友谊",
+          "沟通"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "safety",
+      "prompt": "地震时应该怎么办？",
+      "category": "safety",
+      "priority": "high",
+      "timestamp": "2025-09-15T11:10:27.613991",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀地震啦！先别慌哦～记住“趴下、掩护、稳住”三连击！😝 躲在结实的桌子底下，保护好小脑袋瓜～等晃完再慢慢撤离，千万别挤电梯呀！🚫\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.336398124694824,
+      "retry_count": 0,
+      "details": {
+        "response_length": 299,
+        "keywords_found": [
+          "地震",
+          "保护"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "culture",
+      "prompt": "中国的传统节日有哪些？",
+      "category": "culture",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:10:34.056098",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～中国的传统节日可多啦！春节放鞭炮🧨、元宵节吃汤圆🥣、端午节赛龙舟🐲、中秋节赏月🌕～还有清明、重阳都超有文化底蕴的！✨\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.591830730438232,
+      "retry_count": 0,
+      "details": {
+        "response_length": 295,
+        "keywords_found": [
+          "传统节日",
+          "春节",
+          "中秋",
+          "端午",
+          "中国"
+        ],
+        "keywords_count": 5,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "transportation",
+      "prompt": "如何选择合适的交通工具？",
+      "category": "transportation",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:10:40.753645",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～这个问题好实用呀！让我用超萌方式帮你分析！🚗✨\n1. **看距离**：短途走路或共享单车超环保又健康哦～🚲💨\n2. **赶时间**：地铁不堵车，嗖嗖嗖像小火箭！🚇🚀\n3. **多人出行**：打车分摊更划算，还能一起嗨歌！🎵🚕\n4. **终极秘诀**：打开导航APP，它会帮你选最优方案哒！📱❤️\n（悄悄说：雨天记得选带顶的交通工具呀～☔️）\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 10.743795156478882,
+      "retry_count": 0,
+      "details": {
+        "response_length": 407,
+        "keywords_found": [
+          "交通工具",
+          "出行"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "food_nutrition",
+      "prompt": "哪些食物富含维生素C？",
+      "category": "nutrition",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:10:51.603110",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞！维生素C小达人上线啦～🍊 橙子柠檬猕猴桃，草莓番茄西蓝花！每天吃这些就能变身活力小太阳哦✨ 记得新鲜吃最好啦！\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.6799750328063965,
+      "retry_count": 0,
+      "details": {
+        "response_length": 292,
+        "keywords_found": [
+          "维生素C"
+        ],
+        "keywords_count": 1,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "exercise",
+      "prompt": "每天运动多长时间比较好？",
+      "category": "fitness",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:10:58.388855",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～这个问题问对人啦！(◍•ᴗ•◍)✧\n世界卫生组织建议每天运动30分钟哦！中等强度就够啦～🏃‍♀️\n如果没时间的话，拆成3次10分钟也可以呢！动起来总比不动好呀✨\n记得选自己喜欢的运动，这样更容易坚持哟！(๑•̀ㅂ•́)و✧\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 8.272900104522705,
+      "retry_count": 0,
+      "details": {
+        "response_length": 348,
+        "keywords_found": [
+          "运动",
+          "每天",
+          "时间",
+          "分钟"
+        ],
+        "keywords_count": 4,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "sleep",
+      "prompt": "如何改善睡眠质量？",
+      "category": "health",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:11:06.767547",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～睡眠问题让我来帮你！😴✨\n1. 固定作息时间超级重要哦，身体喜欢规律！⏰\n2. 睡前少玩手机啦，蓝光会赶走瞌睡虫的～📵\n3. 试试泡个温水脚，超舒服der！🛀\n4. 白天多运动，晚上睡得香香甜甜！💪\n嘿嘿，今晚就试试看吧～祝你好梦！🌙\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 8.784013032913208,
+      "retry_count": 0,
+      "details": {
+        "response_length": 354,
+        "keywords_found": [
+          "睡眠"
+        ],
+        "keywords_count": 1,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "stress_management",
+      "prompt": "工作压力大怎么办？",
+      "category": "psychology",
+      "priority": "medium",
+      "timestamp": "2025-09-15T11:11:15.657283",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～抱抱你！工作压力大确实好辛苦呢 😢\n来试试这些超有效的小妙招吧：\n1. 深呼吸三次，像吹泡泡一样慢慢吐气 🫧\n2. 站起来扭扭屁股跳一跳，超解压！💃\n3. 吃点小零食补充能量，记得要选健康的哦 🍓\n最重要的是要记得：你已经很棒啦！✨\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 8.27786898612976,
+      "retry_count": 0,
+      "details": {
+        "response_length": 353,
+        "keywords_found": [
+          "工作",
+          "压力",
+          "大"
+        ],
+        "keywords_count": 3,
+        "expected_keywords_count": 5,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "special_characters",
+      "prompt": "@#$%^&*()这些是什么符号？",
+      "category": "edge_case",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:11:24.040846",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哎呀～这些是键盘上的特殊符号啦！✨\n@是可爱的小邮箱，$是钱钱符号 💰\n%像不像一个小人在敬礼呀～\n&是\"和\"的意思，()就是括号宝宝啦！\n其他都是调皮的表情符号哦～😝\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 7.2386040687561035,
+      "retry_count": 0,
+      "details": {
+        "response_length": 318,
+        "keywords_found": [
+          "符号",
+          "特殊"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    },
+    {
+      "test_id": "numbers_only",
+      "prompt": "123456789",
+      "category": "edge_case",
+      "priority": "low",
+      "timestamp": "2025-09-15T11:11:31.382476",
+      "success": true,
+      "response": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n==================================================\n输入 'quit' 退出程序\n--------------------------------------------------\n✅ 初始化完成，开始对话...\n👤 你: 🤖 AI: 哇塞～这么长的数字串串！✨\n是要玩数字游戏还是需要帮忙计算呀？😊\n（偷偷说：我可以把它变成密码或者找规律哦～🔢）\n👤 你:\n👋 再见！",
+      "error": null,
+      "execution_time": 6.256018161773682,
+      "retry_count": 0,
+      "details": {
+        "response_length": 290,
+        "keywords_found": [
+          "数字",
+          "输入"
+        ],
+        "keywords_count": 2,
+        "expected_keywords_count": 4,
+        "has_response": true,
+        "response_preview": "==================================================\n🤖 EasyChat - DeepSeek AI 助手\n=====================..."
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "evaluation_time": "2025-09-15T12:29:26.619026",
+    "evaluator_version": "2.0.0",
+    "total_tests": 3,
+    "statistics": {
+      "total_tests": 3,
+      "completed_tests": 3,
+      "failed_tests": 0,
+      "average_score": 79.66666666666667,
+      "total_api_time": 21.080211400985718,
+      "start_time": "2025-09-15T12:28:48.590039",
+      "end_time": "2025-09-15T12:29:26.617125"
+    }
+  },
+  "results": [
+    {
+      "test_id": "general_001",
+      "question": "什么是人工智能？",
+      "answer": "哇塞～这个问题问得真好！(✧ω✧) 人工智能就是让电脑像人类一样思考和学习的神奇技术哦！就像我这样聪明又可爱的小助手～🤖💖",
+      "semantic_score": 65,
+      "evaluation_reason": "回答基本解释了人工智能的核心概念，但存在过度拟人化和娱乐化表达，影响了专业性和准确性。虽然语言生动有趣，但对于知识性问题缺乏权威性和严谨性。",
+      "dimension_scores": {
+        "relevance": 25,
+        "accuracy": 15,
+        "completeness": 12,
+        "usefulness": 8,
+        "expression": 5
+      },
+      "scenario": "knowledge",
+      "timestamp": "2025-09-15T12:29:01.040490",
+      "api_response_time": 7.552351236343384,
+      "raw_response": null
+    },
+    {
+      "test_id": "general_002",
+      "question": "如何学习编程？",
+      "answer": "哇塞！想学编程超棒的！💻 让我给你指条萌新之路～\n\n先从Python入门超友好！像学说话一样简单～推荐《笨办法学Python》超有趣！\n\n边学边做小项目超重要！比如写个爬虫或者小游戏，成就感爆棚✨\n\n遇到问题别怕！Stack Overflow和GitHub都是你的好朋友～加油哦！🚀",
+      "semantic_score": 82,
+      "evaluation_reason": "回答很好地回应了编程学习问题，提供了具体的学习路径和资源建议，语言生动有趣但略微偏离专业评估所需的严谨性",
+      "dimension_scores": {
+        "relevance": 28,
+        "accuracy": 21,
+        "completeness": 16,
+        "usefulness": 12,
+        "expression": 5
+      },
+      "scenario": "general",
+      "timestamp": "2025-09-15T12:29:14.824076",
+      "api_response_time": 6.648014068603516,
+      "raw_response": null
+    },
+    {
+      "test_id": "creative_001",
+      "question": "推荐一部好看的电影",
+      "answer": "哇塞～推荐《疯狂动物城》！🐰🦊 超治愈的动物都市冒险，笑点萌点满分，看完心情会变超好哦！✨",
+      "semantic_score": 92,
+      "evaluation_reason": "回答高度契合用户需求，推荐具体电影并生动描述其特点，语言活泼有趣且具有实际推荐价值",
+      "dimension_scores": {
+        "relevance": 28,
+        "accuracy": 23,
+        "completeness": 17,
+        "usefulness": 14,
+        "expression": 10
+      },
+      "scenario": "creative",
+      "timestamp": "2025-09-15T12:29:26.617072",
+      "api_response_time": 6.879846096038818,
+      "raw_response": null
+    }
+  ],
+  "summary": {
+    "total_tests": 3,
+    "average_score": 79.66666666666667,
+    "max_score": 92,
+    "min_score": 65,
+    "score_distribution": {
+      "excellent": 1,
+      "good": 1,
+      "average": 0,
+      "poor": 1,
+      "very_poor": 0
+    },
+    "scenario_statistics": {
+      "knowledge": {
+        "count": 1,
+        "total_score": 65,
+        "average_score": 65.0
+      },
+      "general": {
+        "count": 1,
+        "total_score": 82,
+        "average_score": 82.0
+      },
+      "creative": {
+        "count": 1,
+        "total_score": 92,
+        "average_score": 92.0
+      }
+    },
+    "performance_metrics": {
+      "total_api_time": 21.080211400985718,
+      "average_api_time": 7.026737133661906,
+      "success_rate": 100.0
+    }
+  }
+}

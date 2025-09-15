@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "evaluation_time": "2025-09-15T12:25:54.399334",
+    "evaluator_version": "2.0.0",
+    "total_tests": 3,
+    "statistics": {
+      "total_tests": 3,
+      "completed_tests": 3,
+      "failed_tests": 0,
+      "average_score": 76.33333333333333,
+      "total_api_time": 22.39796805381775,
+      "start_time": "2025-09-15T12:25:15.066513",
+      "end_time": "2025-09-15T12:25:54.399040"
+    }
+  },
+  "results": [
+    {
+      "test_id": "general_001",
+      "question": "什么是人工智能？",
+      "answer": "哇塞～这个问题好棒！(✧ω✧) 人工智能就像给电脑装了个可爱的小脑瓜🧠，让它能像人类一样学习、思考和解决问题哦！简单说就是让机器变聪明啦～✨",
+      "semantic_score": 65.0,
+      "evaluation_reason": "```json\n{\n  \"score\": 65,\n  \"reason\": \"回答基本解释了人工智能的概念，使用了生动比喻但缺乏专业性和准确性。虽然相关性较好，但定义过于简化和拟人化，未提及核心技术要素，在专业领域权威性不足\",\n  \"dimensions\": {\n    \"relevance\": 25,\n    \"accuracy\": 15,\n    \"completeness\": 12,\n    \"usefulness\": 8,\n    \"expression\": 5\n  }\n}\n```",
+      "dimension_scores": {},
+      "scenario": "knowledge",
+      "timestamp": "2025-09-15T12:25:29.347736",
+      "api_response_time": 8.079100131988525,
+      "raw_response": null
+    },
+    {
+      "test_id": "general_002",
+      "question": "如何学习编程？",
+      "answer": "哇塞！想学编程太棒啦！✨ 让我来给你指条萌新之路～\n\n先从Python开始吧，像学说话一样简单！🐍 推荐Codecademy边玩边学超有趣～\n\n每天写一点点代码，积少成多超有成就感哒！💻 遇到问题就Stackoverflow找答案～\n\n最重要的是保持好奇心哦！加油加油！🚀",
+      "semantic_score": 72,
+      "evaluation_reason": "回答风格活泼有趣但偏离专业评估要求，内容相关性较好但缺乏系统性指导，准确性尚可但深度不足，表达生动但不符合评估场景的正式性",
+      "dimension_scores": {
+        "relevance": 24,
+        "accuracy": 20,
+        "completeness": 14,
+        "usefulness": 10,
+        "expression": 4
+      },
+      "scenario": "general",
+      "timestamp": "2025-09-15T12:25:42.454261",
+      "api_response_time": 7.1941609382629395,
+      "raw_response": null
+    },
+    {
+      "test_id": "creative_001",
+      "question": "推荐一部好看的电影",
+      "answer": "哇塞～让我想想！《疯狂动物城》超推荐！🐰🦊 笑点超多又暖心，看完心情会变超好哦～还有超萌的树懒闪电⚡️！",
+      "semantic_score": 92,
+      "evaluation_reason": "回答完美契合用户需求，推荐了广受好评的《疯狂动物城》，准确描述了影片特点（笑点多、暖心、萌宠角色），表达生动有趣且具有个性化推荐价值",
+      "dimension_scores": {
+        "relevance": 28,
+        "accuracy": 23,
+        "completeness": 17,
+        "usefulness": 14,
+        "expression": 10
+      },
+      "scenario": "creative",
+      "timestamp": "2025-09-15T12:25:54.398979",
+      "api_response_time": 7.124706983566284,
+      "raw_response": null
+    }
+  ],
+  "summary": {
+    "total_tests": 3,
+    "average_score": 76.33333333333333,
+    "max_score": 92,
+    "min_score": 65.0,
+    "score_distribution": {
+      "excellent": 1,
+      "good": 0,
+      "average": 1,
+      "poor": 1,
+      "very_poor": 0
+    },
+    "scenario_statistics": {
+      "knowledge": {
+        "count": 1,
+        "total_score": 65.0,
+        "average_score": 65.0
+      },
+      "general": {
+        "count": 1,
+        "total_score": 72,
+        "average_score": 72.0
+      },
+      "creative": {
+        "count": 1,
+        "total_score": 92,
+        "average_score": 92.0
+      }
+    },
+    "performance_metrics": {
+      "total_api_time": 22.39796805381775,
+      "average_api_time": 7.465989351272583,
+      "success_rate": 100.0
+    }
+  }
+}

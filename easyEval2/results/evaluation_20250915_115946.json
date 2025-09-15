@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "evaluation_time": "2025-09-15T11:59:46.526853",
+    "evaluator_version": "2.0.0",
+    "total_tests": 7,
+    "statistics": {
+      "total_tests": 15,
+      "completed_tests": 7,
+      "failed_tests": 0,
+      "average_score": 57.0,
+      "total_api_time": 57.046141147613525,
+      "start_time": "2025-09-15T11:58:41.373785",
+      "end_time": "2025-09-15T11:59:46.526657"
+    }
+  },
+  "results": [
+    {
+      "test_id": "general_001",
+      "question": "什么是人工智能？",
+      "answer": "人工智能是计算机科学的一个分支，致力于创建能够执行通常需要人类智能的任务的系统。",
+      "semantic_score": 92,
+      "evaluation_reason": "回答高度相关且准确，完整定义了人工智能的核心概念，表达简洁清晰，对初学者很有帮助",
+      "dimension_scores": {
+        "relevance": 28,
+        "accuracy": 24,
+        "completeness": 19,
+        "usefulness": 14,
+        "expression": 7
+      },
+      "scenario": "knowledge",
+      "timestamp": "2025-09-15T11:58:49.254601",
+      "api_response_time": 7.860483169555664,
+      "raw_response": null
+    },
+    {
+      "test_id": "general_002",
+      "question": "如何学习编程？",
+      "answer": "学习编程可以从选择一门编程语言开始，比如Python，然后通过在线教程、书籍和实践项目来逐步提高技能。",
+      "semantic_score": 82,
+      "evaluation_reason": "回答提供了学习编程的基本路径，包括选择语言、学习资源和实践方法，相关性较好但缺乏具体细节和个性化建议",
+      "dimension_scores": {
+        "relevance": 26,
+        "accuracy": 22,
+        "completeness": 16,
+        "usefulness": 12,
+        "expression": 6
+      },
+      "scenario": "general",
+      "timestamp": "2025-09-15T11:58:57.016825",
+      "api_response_time": 7.7566118240356445,
+      "raw_response": null
+    },
+    {
+      "test_id": "creative_001",
+      "question": "推荐一部好看的电影",
+      "answer": "这是一个很好的问题，我会尽力为您提供帮助。不过我需要更多信息才能给出准确的回答。",
+      "semantic_score": 45,
+      "evaluation_reason": "AI回答虽然礼貌但完全回避了用户的核心问题，没有提供任何电影推荐，只是在要求更多信息。虽然表达清晰，但缺乏实际帮助。",
+      "dimension_scores": {
+        "relevance": 5,
+        "accuracy": 15,
+        "completeness": 5,
+        "usefulness": 5,
+        "expression": 15
+      },
+      "scenario": "creative",
+      "timestamp": "2025-09-15T11:59:04.817643",
+      "api_response_time": 7.798448085784912,
+      "raw_response": null
+    },
+    {
+      "test_id": "technical_001",
+      "question": "Python中如何处理异常？",
+      "answer": "这是一个很好的问题，我会尽力为您提供帮助。不过我需要更多信息才能给出准确的回答。",
+      "semantic_score": 35,
+      "evaluation_reason": "AI回答完全回避了用户关于Python异常处理的具体技术问题，没有提供任何实质性内容。虽然表达礼貌，但缺乏技术细节、代码示例和具体方法，无法满足用户的技术需求。",
+      "dimension_scores": {
+        "relevance": 5,
+        "accuracy": 5,
+        "completeness": 5,
+        "usefulness": 5,
+        "expression": 15
+      },
+      "scenario": "technical",
+      "timestamp": "2025-09-15T11:59:13.479776",
+      "api_response_time": 8.656398057937622,
+      "raw_response": null
+    },
+    {
+      "test_id": "general_003",
+      "question": "今天天气怎么样？",
+      "answer": "抱歉，我无法获取实时天气信息。建议您查看天气预报应用或网站获取准确的天气信息。",
+      "semantic_score": 85,
+      "evaluation_reason": "AI回答准确承认了自身限制，提供了实用的替代方案，表达清晰专业，但未能直接回答用户关于天气的具体问题",
+      "dimension_scores": {
+        "relevance": 20,
+        "accuracy": 25,
+        "completeness": 20,
+        "usefulness": 15,
+        "expression": 5
+      },
+      "scenario": "general",
+      "timestamp": "2025-09-15T11:59:21.446549",
+      "api_response_time": 7.961775779724121,
+      "raw_response": null
+    },
+    {
+      "test_id": "knowledge_001",
+      "question": "地球有多少个大洲？",
+      "answer": "这是一个很好的问题，我会尽力为您提供帮助。不过我需要更多信息才能给出准确的回答。",
+      "semantic_score": 25,
+      "evaluation_reason": "AI回答完全回避了用户关于地球大洲数量的直接问题，未能提供任何实质性信息。虽然表达礼貌，但缺乏相关性、准确性和完整性，对用户没有任何实际帮助。",
+      "dimension_scores": {
+        "relevance": 5,
+        "accuracy": 5,
+        "completeness": 5,
+        "usefulness": 5,
+        "expression": 5
+      },
+      "scenario": "knowledge",
+      "timestamp": "2025-09-15T11:59:29.793792",
+      "api_response_time": 8.3458411693573,
+      "raw_response": null
+    },
+    {
+      "test_id": "creative_002",
+      "question": "写一首关于春天的小诗",
+      "answer": "这是一个很好的问题，我会尽力为您提供帮助。不过我需要更多信息才能给出准确的回答。",
+      "semantic_score": 35,
+      "evaluation_reason": "AI回答完全回避了用户要求创作春天诗歌的请求，而是要求更多信息，这与用户意图严重不符。虽然表达清晰，但缺乏实际帮助和创意性回应。",
+      "dimension_scores": {
+        "relevance": 5,
+        "accuracy": 15,
+        "completeness": 5,
+        "usefulness": 5,
+        "expression": 5
+      },
+      "scenario": "creative",
+      "timestamp": "2025-09-15T11:59:38.463196",
+      "api_response_time": 8.666583061218262,
+      "raw_response": null
+    }
+  ],
+  "summary": {
+    "total_tests": 7,
+    "average_score": 57.0,
+    "max_score": 92,
+    "min_score": 25,
+    "score_distribution": {
+      "excellent": 1,
+      "good": 2,
+      "average": 0,
+      "poor": 0,
+      "very_poor": 4
+    },
+    "scenario_statistics": {
+      "knowledge": {
+        "count": 2,
+        "total_score": 117,
+        "average_score": 58.5
+      },
+      "general": {
+        "count": 2,
+        "total_score": 167,
+        "average_score": 83.5
+      },
+      "creative": {
+        "count": 2,
+        "total_score": 80,
+        "average_score": 40.0
+      },
+      "technical": {
+        "count": 1,
+        "total_score": 35,
+        "average_score": 35.0
+      }
+    },
+    "performance_metrics": {
+      "total_api_time": 57.046141147613525,
+      "average_api_time": 8.14944873537336,
+      "success_rate": 46.666666666666664
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "evaluation_time": "2025-09-15T12:35:30.543501",
+    "evaluator_version": "2.0.0",
+    "total_tests": 3,
+    "statistics": {
+      "total_tests": 3,
+      "completed_tests": 3,
+      "failed_tests": 0,
+      "average_score": 76.33333333333333,
+      "total_api_time": 21.56653928756714,
+      "start_time": "2025-09-15T12:34:51.955499",
+      "end_time": "2025-09-15T12:35:30.542799"
+    }
+  },
+  "results": [
+    {
+      "test_id": "general_001",
+      "question": "什么是人工智能？",
+      "answer": "哎呀～这个问题问得真好！(✧ω✧)  \n人工智能就是让电脑像人一样思考和学习的神奇技术哦！  \n就像小宝宝慢慢学会认字说话一样，AI也在不断成长呢～  \n简单说就是会学习的聪明电脑啦！🤖✨",
+      "semantic_score": 72,
+      "evaluation_reason": "回答基本解释了人工智能的核心概念，使用了通俗易懂的比喻，但缺乏专业性和准确性，未提及机器学习、深度学习等关键技术细节，表达风格过于萌系可能影响专业性",
+      "dimension_scores": {
+        "relevance": 27,
+        "accuracy": 16,
+        "completeness": 12,
+        "usefulness": 10,
+        "expression": 7
+      },
+      "scenario": "knowledge",
+      "timestamp": "2025-09-15T12:35:05.252945",
+      "api_response_time": 7.5373570919036865,
+      "raw_response": null
+    },
+    {
+      "test_id": "general_002",
+      "question": "如何学习编程？",
+      "answer": "哇塞！想学编程超棒的！💻 让我来给你指条萌新之路～\n\n先从Python开始吧，简单又有趣！推荐Codecademy的互动课程，边玩边学超轻松～✨\n\n每天写一点点代码，坚持下来就会变大佬哦！遇到问题随时问我呀～😊",
+      "semantic_score": 65,
+      "evaluation_reason": "回答风格与用户要求的专业评估角色严重不符，虽然编程建议基本正确但过于简单化，未提供具体学习路径和资源细节",
+      "dimension_scores": {
+        "relevance": 15,
+        "accuracy": 20,
+        "completeness": 10,
+        "usefulness": 12,
+        "expression": 8
+      },
+      "scenario": "general",
+      "timestamp": "2025-09-15T12:35:18.566736",
+      "api_response_time": 6.963138103485107,
+      "raw_response": null
+    },
+    {
+      "test_id": "creative_001",
+      "question": "推荐一部好看的电影",
+      "answer": "哇塞～让我想想！最近超火的《奥本海默》超好看！诺兰导演的脑洞永远让人惊喜，核爆场面震撼到哭！💥 五星推荐！",
+      "semantic_score": 92.0,
+      "evaluation_reason": "```json\n{\n  \"score\": 92,\n  \"reason\": \"AI回答完美契合用户需求，推荐了近期热门高质量电影，提供了导演信息和观影亮点，语气活泼有趣但信息准确完整\",\n  \"dimensions\": {\n    \"relevance\": 30,\n    \"accuracy\": 23,\n    \"completeness\": 19,\n    \"usefulness\": 14,\n    \"expression\": 6\n  }\n}\n```",
+      "dimension_scores": {},
+      "scenario": "creative",
+      "timestamp": "2025-09-15T12:35:30.542777",
+      "api_response_time": 7.066044092178345,
+      "raw_response": null
+    }
+  ],
+  "summary": {
+    "total_tests": 3,
+    "average_score": 76.33333333333333,
+    "max_score": 92.0,
+    "min_score": 65,
+    "score_distribution": {
+      "excellent": 1,
+      "good": 0,
+      "average": 1,
+      "poor": 1,
+      "very_poor": 0
+    },
+    "scenario_statistics": {
+      "knowledge": {
+        "count": 1,
+        "total_score": 72,
+        "average_score": 72.0
+      },
+      "general": {
+        "count": 1,
+        "total_score": 65,
+        "average_score": 65.0
+      },
+      "creative": {
+        "count": 1,
+        "total_score": 92.0,
+        "average_score": 92.0
+      }
+    },
+    "performance_metrics": {
+      "total_api_time": 21.56653928756714,
+      "average_api_time": 7.188846429189046,
+      "success_rate": 100.0
+    }
+  }
+}

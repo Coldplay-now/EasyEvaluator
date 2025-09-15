@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "evaluation_time": "2025-09-15T12:36:43.584209",
+    "evaluator_version": "2.0.0",
+    "total_tests": 5,
+    "statistics": {
+      "total_tests": 5,
+      "completed_tests": 5,
+      "failed_tests": 0,
+      "average_score": 77.2,
+      "total_api_time": 36.4243483543396,
+      "start_time": "2025-09-15T12:35:39.398471",
+      "end_time": "2025-09-15T12:36:43.581318"
+    }
+  },
+  "results": [
+    {
+      "test_id": "general_001",
+      "question": "什么是人工智能？",
+      "answer": "哎呀～这个问题好棒！(✧ω✧) 人工智能就是让电脑像人一样思考和学习的技术啦！就像我这样聪明又可爱的小助手～🤖✨",
+      "semantic_score": 65.0,
+      "evaluation_reason": "```json\n{\n  \"score\": 65,\n  \"reason\": \"回答基本解释了人工智能的核心概念，但过于简化和拟人化，缺乏专业性和准确性，表达风格与专业问题不匹配\",\n  \"dimensions\": {\n    \"relevance\": 25,\n    \"accuracy\": 15,\n    \"completeness\": 12,\n    \"usefulness\": 8,\n    \"expression\": 5\n  }\n}\n```",
+      "dimension_scores": {},
+      "scenario": "knowledge",
+      "timestamp": "2025-09-15T12:35:51.022688",
+      "api_response_time": 7.159419298171997,
+      "raw_response": null
+    },
+    {
+      "test_id": "general_002",
+      "question": "如何学习编程？",
+      "answer": "哇塞！想学编程超棒的！💻 让我给你指条萌新之路～\n\n先从Python入门超友好！像学说话一样简单呢～推荐Codecademy的互动课程超有趣！✨\n\n边学边做小项目超有成就感！比如写个爬虫或者小游戏～遇到bug别怕，Stack Overflow是你的好伙伴！😊\n\n最重要的是保持练习和好奇心！每天写点代码，慢慢就会变大佬啦～加油哦！🚀",
+      "semantic_score": 92.0,
+      "evaluation_reason": "```json\n{\n  \"score\": 92,\n  \"reason\": \"AI回答完美契合用户问题，提供了具体的学习路径、推荐资源、实践方法和学习心态，内容准确完整且表达生动有趣\",\n  \"dimensions\": {\n    \"relevance\": 28,\n    \"accuracy\": 23,\n    \"completeness\": 19,\n    \"usefulness\": 14,\n    \"expression\": 8\n  }\n}\n```",
+      "dimension_scores": {},
+      "scenario": "general",
+      "timestamp": "2025-09-15T12:36:06.170729",
+      "api_response_time": 6.819231986999512,
+      "raw_response": null
+    },
+    {
+      "test_id": "creative_001",
+      "question": "推荐一部好看的电影",
+      "answer": "哇塞！让我想想～《疯狂动物城》超级推荐！🐰🦊 笑点满满又治愈，看完心情会变超好哦！✨",
+      "semantic_score": 92,
+      "evaluation_reason": "回答完美契合用户需求，推荐了广受好评的《疯狂动物城》，准确描述了影片特点（喜剧+治愈），表达生动有趣且具有强烈推荐性，虽然未提供更多选项但单推荐质量很高",
+      "dimension_scores": {
+        "relevance": 30,
+        "accuracy": 23,
+        "completeness": 17,
+        "usefulness": 14,
+        "expression": 8
+      },
+      "scenario": "creative",
+      "timestamp": "2025-09-15T12:36:18.670940",
+      "api_response_time": 8.11104702949524,
+      "raw_response": null
+    },
+    {
+      "test_id": "technical_001",
+      "question": "Python中如何处理异常？",
+      "answer": "哎呀～Python小可爱遇到异常不要慌！😊 用try-except就能轻松捕获异常啦！✨\n\n比如：\n```python\ntry:\n    risky_code()\nexcept Exception as e:\n    print(f\"出错啦：{e}\")\n```\n\n还可以用else和finally哦！是不是超简单～💖",
+      "semantic_score": 72.0,
+      "evaluation_reason": "```json\n{\n  \"score\": 72,\n  \"reason\": \"回答基本覆盖了异常处理的核心方法，提供了代码示例且语法正确，但缺乏对具体异常类型、自定义异常、最佳实践等关键细节的说明，表达风格过于萌系不够专业\",\n  \"dimensions\": {\n    \"relevance\": 27,\n    \"accuracy\": 20,\n    \"completeness\": 14,\n    \"usefulness\": 8,\n    \"expression\": 3\n  }\n}\n```",
+      "dimension_scores": {},
+      "scenario": "technical",
+      "timestamp": "2025-09-15T12:36:32.415931",
+      "api_response_time": 7.600975036621094,
+      "raw_response": null
+    },
+    {
+      "test_id": "general_003",
+      "question": "今天天气怎么样？",
+      "answer": "哎呀～这个问题需要知道你在哪里呢！告诉我你的位置，我马上帮你查查天气小情报！🌤️✨",
+      "semantic_score": 65,
+      "evaluation_reason": "回答虽然礼貌且提供了解决方案，但未能直接回答天气问题，缺乏具体信息，属于规避性回应",
+      "dimension_scores": {
+        "relevance": 15,
+        "accuracy": 20,
+        "completeness": 12,
+        "usefulness": 10,
+        "expression": 8
+      },
+      "scenario": "general",
+      "timestamp": "2025-09-15T12:36:43.581245",
+      "api_response_time": 6.733675003051758,
+      "raw_response": null
+    }
+  ],
+  "summary": {
+    "total_tests": 5,
+    "average_score": 77.2,
+    "max_score": 92.0,
+    "min_score": 65.0,
+    "score_distribution": {
+      "excellent": 2,
+      "good": 0,
+      "average": 1,
+      "poor": 2,
+      "very_poor": 0
+    },
+    "scenario_statistics": {
+      "knowledge": {
+        "count": 1,
+        "total_score": 65.0,
+        "average_score": 65.0
+      },
+      "general": {
+        "count": 2,
+        "total_score": 157.0,
+        "average_score": 78.5
+      },
+      "creative": {
+        "count": 1,
+        "total_score": 92,
+        "average_score": 92.0
+      },
+      "technical": {
+        "count": 1,
+        "total_score": 72.0,
+        "average_score": 72.0
+      }
+    },
+    "performance_metrics": {
+      "total_api_time": 36.4243483543396,
+      "average_api_time": 7.28486967086792,
+      "success_rate": 100.0
+    }
+  }
+}

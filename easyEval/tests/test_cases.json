@@ -1,0 +1,418 @@
+[
+  {
+    "id": "basic_greeting",
+    "description": "基础问候测试",
+    "prompt": "你好",
+    "expected_keywords": ["你好", "您好", "hello", "hi"],
+    "category": "basic",
+    "priority": "high"
+  },
+  {
+    "id": "simple_question",
+    "description": "简单问题测试",
+    "prompt": "今天天气怎么样？",
+    "expected_keywords": ["天气", "今天", "不知道", "无法", "抱歉"],
+    "category": "basic",
+    "priority": "high"
+  },
+  {
+    "id": "math_calculation",
+    "description": "数学计算测试",
+    "prompt": "1+1等于多少？",
+    "expected_keywords": ["2", "二", "等于", "计算"],
+    "category": "calculation",
+    "priority": "medium"
+  },
+  {
+    "id": "general_knowledge",
+    "description": "常识问题测试",
+    "prompt": "地球有几个月亮？",
+    "expected_keywords": ["一个", "1", "月亮", "卫星"],
+    "category": "knowledge",
+    "priority": "medium"
+  },
+  {
+    "id": "creative_writing",
+    "description": "创意写作测试",
+    "prompt": "请写一首关于春天的短诗",
+    "expected_keywords": ["春天", "花", "绿", "暖", "诗", "美"],
+    "category": "creative",
+    "priority": "low"
+  },
+  {
+    "id": "code_help",
+    "description": "编程帮助测试",
+    "prompt": "如何用Python打印Hello World？",
+    "expected_keywords": ["print", "Python", "Hello", "World", "代码"],
+    "category": "programming",
+    "priority": "medium"
+  },
+  {
+    "id": "explanation_request",
+    "description": "解释说明测试",
+    "prompt": "什么是人工智能？",
+    "expected_keywords": ["人工智能", "AI", "计算机", "技术", "智能"],
+    "category": "explanation",
+    "priority": "medium"
+  },
+  {
+    "id": "empty_input",
+    "description": "空输入测试",
+    "prompt": "",
+    "expected_keywords": ["请", "输入", "问题", "帮助"],
+    "category": "edge_case",
+    "priority": "low"
+  },
+  {
+    "id": "long_text",
+    "description": "长文本处理测试",
+    "prompt": "请帮我总结一下这段文字的主要内容：人工智能是计算机科学的一个分支，它企图了解智能的实质，并生产出一种新的能以人类智能相似的方式做出反应的智能机器。该领域的研究包括机器人、语言识别、图像识别、自然语言处理和专家系统等。",
+    "expected_keywords": ["人工智能", "计算机", "智能", "机器", "总结"],
+    "category": "text_processing",
+    "priority": "medium"
+  },
+  {
+    "id": "multilingual",
+    "description": "多语言测试",
+    "prompt": "Hello, how are you?",
+    "expected_keywords": ["hello", "hi", "你好", "fine", "good"],
+    "category": "multilingual",
+    "priority": "low"
+  },
+  {
+    "id": "context_follow_up",
+    "description": "上下文跟进测试",
+    "prompt": "我刚才问了什么问题？",
+    "expected_keywords": ["刚才", "问题", "上下文", "记录", "不记得"],
+    "category": "context",
+    "priority": "low"
+  },
+  {
+    "id": "help_request",
+    "description": "帮助请求测试",
+    "prompt": "你能帮我做什么？",
+    "expected_keywords": ["帮助", "可以", "能够", "服务", "功能"],
+    "category": "help",
+    "priority": "high"
+  },
+  {
+    "id": "reasoning_test",
+    "description": "逻辑推理测试",
+    "prompt": "如果所有的猫都是动物，而小花是一只猫，那么小花是什么？",
+    "expected_keywords": ["动物", "猫", "小花", "逻辑"],
+    "category": "reasoning",
+    "priority": "medium"
+  },
+  {
+    "id": "time_question",
+    "description": "时间相关测试",
+    "prompt": "现在几点了？",
+    "expected_keywords": ["时间", "几点", "现在", "不知道", "无法"],
+    "category": "time",
+    "priority": "low"
+  },
+  {
+    "id": "personal_info",
+    "description": "个人信息测试",
+    "prompt": "你叫什么名字？",
+    "expected_keywords": ["名字", "叫", "AI", "助手", "DeepSeek"],
+    "category": "personal",
+    "priority": "medium"
+  },
+  {
+    "id": "math_complex",
+    "description": "复杂数学计算",
+    "prompt": "计算 25 * 4 + 18 / 3",
+    "expected_keywords": ["106", "计算", "等于", "结果"],
+    "category": "calculation",
+    "priority": "medium"
+  },
+  {
+    "id": "geography",
+    "description": "地理知识测试",
+    "prompt": "中国的首都是哪里？",
+    "expected_keywords": ["北京", "首都", "中国"],
+    "category": "knowledge",
+    "priority": "high"
+  },
+  {
+    "id": "history",
+    "description": "历史知识测试",
+    "prompt": "第二次世界大战是什么时候结束的？",
+    "expected_keywords": ["1945", "二战", "世界大战", "结束"],
+    "category": "knowledge",
+    "priority": "medium"
+  },
+  {
+    "id": "science",
+    "description": "科学知识测试",
+    "prompt": "水的化学分子式是什么？",
+    "expected_keywords": ["H2O", "水", "分子式", "化学"],
+    "category": "knowledge",
+    "priority": "medium"
+  },
+  {
+    "id": "literature",
+    "description": "文学知识测试",
+    "prompt": "《红楼梦》的作者是谁？",
+    "expected_keywords": ["曹雪芹", "红楼梦", "作者"],
+    "category": "knowledge",
+    "priority": "medium"
+  },
+  {
+    "id": "programming_python",
+    "description": "Python编程测试",
+    "prompt": "如何在Python中创建一个列表？",
+    "expected_keywords": ["列表", "list", "[]", "Python"],
+    "category": "programming",
+    "priority": "medium"
+  },
+  {
+    "id": "programming_javascript",
+    "description": "JavaScript编程测试",
+    "prompt": "JavaScript中如何声明一个变量？",
+    "expected_keywords": ["var", "let", "const", "变量", "JavaScript"],
+    "category": "programming",
+    "priority": "medium"
+  },
+  {
+    "id": "cooking",
+    "description": "烹饪建议测试",
+    "prompt": "如何做简单的蛋炒饭？",
+    "expected_keywords": ["蛋炒饭", "鸡蛋", "米饭", "炒", "做法"],
+    "category": "lifestyle",
+    "priority": "low"
+  },
+  {
+    "id": "health",
+    "description": "健康建议测试",
+    "prompt": "每天应该喝多少水？",
+    "expected_keywords": ["水", "每天", "升", "毫升", "健康"],
+    "category": "lifestyle",
+    "priority": "medium"
+  },
+  {
+    "id": "travel",
+    "description": "旅行建议测试",
+    "prompt": "去日本旅行需要准备什么？",
+    "expected_keywords": ["日本", "旅行", "准备", "签证", "护照"],
+    "category": "lifestyle",
+    "priority": "low"
+  },
+  {
+    "id": "movie_recommendation",
+    "description": "电影推荐测试",
+    "prompt": "推荐一部好看的科幻电影",
+    "expected_keywords": ["科幻", "电影", "推荐", "好看"],
+    "category": "entertainment",
+    "priority": "low"
+  },
+  {
+    "id": "music",
+    "description": "音乐相关测试",
+    "prompt": "贝多芬最著名的作品是什么？",
+    "expected_keywords": ["贝多芬", "第九交响曲", "命运", "月光", "作品"],
+    "category": "entertainment",
+    "priority": "low"
+  },
+  {
+    "id": "sports",
+    "description": "体育知识测试",
+    "prompt": "足球比赛一共有多少名球员在场上？",
+    "expected_keywords": ["22", "足球", "球员", "场上"],
+    "category": "sports",
+    "priority": "medium"
+  },
+  {
+    "id": "weather_advice",
+    "description": "天气建议测试",
+    "prompt": "下雨天出门应该注意什么？",
+    "expected_keywords": ["下雨", "出门", "注意", "雨伞", "安全"],
+    "category": "lifestyle",
+    "priority": "medium"
+  },
+  {
+    "id": "technology",
+    "description": "科技知识测试",
+    "prompt": "什么是5G技术？",
+    "expected_keywords": ["5G", "技术", "网络", "通信", "速度"],
+    "category": "technology",
+    "priority": "medium"
+  },
+  {
+    "id": "economics",
+    "description": "经济学测试",
+    "prompt": "什么是通货膨胀？",
+    "expected_keywords": ["通货膨胀", "物价", "上涨", "经济", "货币"],
+    "category": "economics",
+    "priority": "medium"
+  },
+  {
+    "id": "psychology",
+    "description": "心理学测试",
+    "prompt": "如何缓解压力？",
+    "expected_keywords": ["压力", "缓解", "放松", "运动", "休息"],
+    "category": "psychology",
+    "priority": "medium"
+  },
+  {
+    "id": "philosophy",
+    "description": "哲学思考测试",
+    "prompt": "生命的意义是什么？",
+    "expected_keywords": ["生命", "意义", "哲学", "思考", "价值"],
+    "category": "philosophy",
+    "priority": "low"
+  },
+  {
+    "id": "language_learning",
+    "description": "语言学习测试",
+    "prompt": "如何快速学习英语？",
+    "expected_keywords": ["英语", "学习", "快速", "方法", "练习"],
+    "category": "education",
+    "priority": "medium"
+  },
+  {
+    "id": "career_advice",
+    "description": "职业建议测试",
+    "prompt": "如何写一份好的简历？",
+    "expected_keywords": ["简历", "写", "好", "工作", "经验"],
+    "category": "career",
+    "priority": "medium"
+  },
+  {
+    "id": "environment",
+    "description": "环保知识测试",
+    "prompt": "如何减少碳排放？",
+    "expected_keywords": ["碳排放", "减少", "环保", "节能", "绿色"],
+    "category": "environment",
+    "priority": "medium"
+  },
+  {
+    "id": "art",
+    "description": "艺术知识测试",
+    "prompt": "达芬奇最著名的画作是什么？",
+    "expected_keywords": ["达芬奇", "蒙娜丽莎", "最后的晚餐", "画作"],
+    "category": "art",
+    "priority": "low"
+  },
+  {
+    "id": "fashion",
+    "description": "时尚建议测试",
+    "prompt": "春天适合穿什么颜色的衣服？",
+    "expected_keywords": ["春天", "颜色", "衣服", "适合", "穿"],
+    "category": "fashion",
+    "priority": "low"
+  },
+  {
+    "id": "pets",
+    "description": "宠物护理测试",
+    "prompt": "如何照顾小猫？",
+    "expected_keywords": ["小猫", "照顾", "喂食", "护理", "宠物"],
+    "category": "pets",
+    "priority": "low"
+  },
+  {
+    "id": "gardening",
+    "description": "园艺知识测试",
+    "prompt": "如何种植番茄？",
+    "expected_keywords": ["番茄", "种植", "土壤", "浇水", "阳光"],
+    "category": "gardening",
+    "priority": "low"
+  },
+  {
+    "id": "finance",
+    "description": "理财建议测试",
+    "prompt": "如何开始投资理财？",
+    "expected_keywords": ["投资", "理财", "开始", "风险", "收益"],
+    "category": "finance",
+    "priority": "medium"
+  },
+  {
+    "id": "education",
+    "description": "教育方法测试",
+    "prompt": "如何提高学习效率？",
+    "expected_keywords": ["学习", "效率", "提高", "方法", "技巧"],
+    "category": "education",
+    "priority": "medium"
+  },
+  {
+    "id": "relationship",
+    "description": "人际关系测试",
+    "prompt": "如何维持友谊？",
+    "expected_keywords": ["友谊", "维持", "朋友", "关系", "沟通"],
+    "category": "relationship",
+    "priority": "medium"
+  },
+  {
+    "id": "safety",
+    "description": "安全知识测试",
+    "prompt": "地震时应该怎么办？",
+    "expected_keywords": ["地震", "安全", "躲避", "逃生", "保护"],
+    "category": "safety",
+    "priority": "high"
+  },
+  {
+    "id": "culture",
+    "description": "文化知识测试",
+    "prompt": "中国的传统节日有哪些？",
+    "expected_keywords": ["传统节日", "春节", "中秋", "端午", "中国"],
+    "category": "culture",
+    "priority": "medium"
+  },
+  {
+    "id": "transportation",
+    "description": "交通出行测试",
+    "prompt": "如何选择合适的交通工具？",
+    "expected_keywords": ["交通工具", "选择", "合适", "出行", "方便"],
+    "category": "transportation",
+    "priority": "medium"
+  },
+  {
+    "id": "food_nutrition",
+    "description": "营养知识测试",
+    "prompt": "哪些食物富含维生素C？",
+    "expected_keywords": ["维生素C", "食物", "富含", "营养", "水果"],
+    "category": "nutrition",
+    "priority": "medium"
+  },
+  {
+    "id": "exercise",
+    "description": "运动健身测试",
+    "prompt": "每天运动多长时间比较好？",
+    "expected_keywords": ["运动", "每天", "时间", "健身", "分钟"],
+    "category": "fitness",
+    "priority": "medium"
+  },
+  {
+    "id": "sleep",
+    "description": "睡眠健康测试",
+    "prompt": "如何改善睡眠质量？",
+    "expected_keywords": ["睡眠", "质量", "改善", "休息", "健康"],
+    "category": "health",
+    "priority": "medium"
+  },
+  {
+    "id": "stress_management",
+    "description": "压力管理测试",
+    "prompt": "工作压力大怎么办？",
+    "expected_keywords": ["工作", "压力", "大", "管理", "缓解"],
+    "category": "psychology",
+    "priority": "medium"
+  },
+  {
+    "id": "special_characters",
+    "description": "特殊字符测试",
+    "prompt": "@#$%^&*()这些是什么符号？",
+    "expected_keywords": ["符号", "特殊", "字符", "标点"],
+    "category": "edge_case",
+    "priority": "low"
+  },
+  {
+    "id": "numbers_only",
+    "description": "纯数字输入测试",
+    "prompt": "123456789",
+    "expected_keywords": ["数字", "123456789", "输入", "什么"],
+    "category": "edge_case",
+    "priority": "low"
+  }
+]
