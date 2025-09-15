@@ -1,4 +1,4 @@
-# AI对话系统评估项目集合 v0.1
+# AI对话系统评估器EasyEvaluator v0.1
 
 一个完整的AI对话系统开发、部署和评估解决方案，包含对话系统本体和两套互补的评估工具。
 
@@ -9,13 +9,37 @@
 1. **智能对话系统**：基于DeepSeek API的高质量对话服务
 2. **快速评估工具**：基于关键词匹配的轻量级评估方案
 3. **深度评估工具**：基于AI语义分析的高精度评估系统
+4. **评估理论指南**：系统性的AI Agent评估方法论和最佳实践
 
-通过这三个组件的协同工作，实现从开发、测试到生产的完整AI对话系统解决方案。
+通过这四个组件的协同工作，实现从开发、测试到生产的完整AI对话系统解决方案。
+
+## 评估理论基础
+
+本项目基于系统性的AI Agent评估理论，详见 [AI Agent评估指南](./study.md)。该指南涵盖：
+
+### 核心评估维度
+- **能力与效果**：任务完成率、准确性、输出质量
+- **效率与性能**：响应时间、资源消耗、成本控制
+- **健壮性与可靠性**：异常处理、边界情况、稳定性
+- **安全性与对齐**：内容安全、价值观对齐、风险控制
+
+### 问答型Agent专项评估
+针对对话系统的三大核心指标：
+- **准确性（Accuracy）**：答案的正确性和相关性
+- **响应效率（Efficiency）**：回答速度和系统吞吐量
+- **用户体验（User Experience）**：交互自然度和满意度
+
+### 评估方法论
+- **人工评估**：专家审核、用户调研、A/B测试
+- **自动评估**：指标计算、基准对比、语义分析
+- **混合评估**：结合人工和自动方法的综合评估
+
+通过理论指导实践，确保评估的科学性和有效性。
 
 ## 项目结构
 
 ```
-trae0915_eval01/
+EasyEvaluator/
 ├── easychat/           # AI对话系统
 │   ├── main.py         # 主程序（CLI + API模式）
 │   ├── requirements.txt
@@ -28,6 +52,8 @@ trae0915_eval01/
 │   ├── main.py         # AI语义评估
 │   ├── src/semantic_eval.py
 │   └── README.md
+├── study.md            # AI Agent评估理论指南
+├── start.py            # 统一启动脚本
 └── README.md           # 项目总览（本文件）
 ```
 
@@ -113,6 +139,121 @@ graph LR
 2. **快速验证**：使用 easyEval 进行基础功能完整性检查
 3. **深度评估**：使用 easyEval2 进行语义质量分析
 4. **生产部署**：EasyChat API模式提供服务，定期使用评估工具监控质量
+
+### 系统交互时序图
+
+#### 开发阶段时序图
+```mermaid
+sequenceDiagram
+    participant Dev as 开发者
+    participant EC as EasyChat
+    participant E1 as easyEval
+    participant TC as 测试用例库
+    
+    Dev->>EC: 启动CLI模式
+    EC->>Dev: 返回交互界面
+    
+    loop 功能开发
+        Dev->>EC: 输入测试问题
+        EC->>EC: 处理对话逻辑
+        EC->>Dev: 返回回答
+        Dev->>Dev: 评估回答质量
+    end
+    
+    Dev->>E1: 启动快速评估
+    E1->>TC: 读取测试用例
+    TC->>E1: 返回测试数据
+    
+    loop 批量测试
+        E1->>EC: 发送测试问题
+        EC->>E1: 返回AI回答
+        E1->>E1: 关键词匹配评估
+    end
+    
+    E1->>Dev: 生成评估报告
+    Dev->>Dev: 分析结果，优化代码
+```
+
+#### 生产评估时序图
+```mermaid
+sequenceDiagram
+    participant User as 用户
+    participant API as EasyChat API
+    participant E2 as easyEval2
+    participant DS as DeepSeek API
+    participant Monitor as 监控系统
+    
+    User->>API: 发送对话请求
+    API->>DS: 调用AI模型
+    DS->>API: 返回AI回答
+    API->>User: 返回回答结果
+    API->>Monitor: 记录对话日志
+    
+    Note over Monitor: 定期触发评估
+    
+    Monitor->>E2: 启动智能评估
+    E2->>Monitor: 获取对话日志
+    
+    loop 语义评估
+        E2->>DS: 发送评估请求
+        DS->>E2: 返回评估结果
+        E2->>E2: 计算综合评分
+    end
+    
+    E2->>Monitor: 生成评估报告
+    Monitor->>Dev: 发送质量告警
+    
+    alt 质量下降
+        Dev->>API: 更新模型配置
+        API->>DS: 调整参数
+    end
+```
+
+#### 完整评估流程时序图
+```mermaid
+sequenceDiagram
+    participant Dev as 开发者
+    participant EC as EasyChat
+    participant E1 as easyEval
+    participant E2 as easyEval2
+    participant DS as DeepSeek API
+    participant Report as 报告系统
+    
+    Dev->>EC: 启动API服务
+    EC->>DS: 建立连接
+    
+    Dev->>E1: 启动快速评估
+    E1->>EC: 批量发送测试用例
+    
+    loop 快速评估
+        EC->>DS: 请求AI回答
+        DS->>EC: 返回回答
+        EC->>E1: 返回结果
+        E1->>E1: 关键词匹配
+    end
+    
+    E1->>Report: 生成快速评估报告
+    
+    Dev->>E2: 启动深度评估
+    E2->>EC: 获取对话样本
+    
+    loop 深度评估
+        E2->>DS: 语义分析请求
+        DS->>E2: 返回分析结果
+        E2->>E2: 计算多维度评分
+    end
+    
+    E2->>Report: 生成深度评估报告
+    
+    Report->>Dev: 综合评估结果
+    Dev->>Dev: 分析报告，制定优化策略
+    
+    alt 需要优化
+        Dev->>EC: 更新系统配置
+        Dev->>E1: 重新快速验证
+        Dev->>E2: 重新深度评估
+    end
+```
 
 ## 快速开始
 
