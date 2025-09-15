@@ -1,5 +1,14 @@
 # AI对话系统评估器EasyEvaluator v0.1
 
+[![Version](https://img.shields.io/badge/version-v0.1-blue.svg)](https://github.com/Coldplay-now/EasyEvaluator/releases)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/Coldplay-now/EasyEvaluator)
+[![Status](https://img.shields.io/badge/status-Active%20Development-brightgreen.svg)](https://github.com/Coldplay-now/EasyEvaluator)
+[![Contributors](https://img.shields.io/badge/contributors-welcome-orange.svg)](https://github.com/Coldplay-now/EasyEvaluator/blob/master/README.md#14-贡献)
+[![Issues](https://img.shields.io/github/issues/Coldplay-now/EasyEvaluator.svg)](https://github.com/Coldplay-now/EasyEvaluator/issues)
+[![Stars](https://img.shields.io/github/stars/Coldplay-now/EasyEvaluator.svg)](https://github.com/Coldplay-now/EasyEvaluator/stargazers)
+
 一个完整的AI对话系统开发、部署和评估解决方案，包含对话系统本体和两套互补的评估工具。
 
 ## 1. 项目意图
