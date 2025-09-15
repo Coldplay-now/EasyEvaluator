@@ -142,7 +142,7 @@ graph LR
 
 ### 系统交互时序图
 
-#### 开发阶段时序图
+#### EasyChat CLI模式时序图
 ```mermaid
 sequenceDiagram
     participant Dev as 开发者
